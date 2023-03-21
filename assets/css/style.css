@@ -2082,7 +2082,7 @@ ol {
   z-index: 9;
   background-color: #02121D;
   border-radius: 5px;
-  border: 2px solid rgba(40, 219, 209, 0.3);
+  border: 2px solid rgba(134, 29, 36, 0.6);
 }
 .kyc__form .form-header .stepIndicator::after {
   -webkit-transition: all 0.3s ease;
@@ -2133,7 +2133,7 @@ ol {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 15px 20px;
-  border: 1px solid rgba(40, 219, 209, 0.3);
+  border: 1px solid rgba(134, 29, 36, 0.6);
   border-radius: 5px;
   background-color: #02121D;
   color: #C1C7CB;
@@ -2260,7 +2260,7 @@ ol {
   gap: 15px;
 }
 .stacking__period-list .nav-link {
-  border: 1px solid rgba(40, 219, 209, 0.3);
+  border: 1px solid rgba(134, 29, 36, 0.6);
   border-radius: 5px;
   padding: 1rem 1.25rem;
   color: #83282e;
@@ -3869,7 +3869,7 @@ ol {
   transform: translateY(-3px);
   background: transparent;
   border-color: #83282e;
-  box-shadow: 0 0 10px rgba(40, 219, 209, 0.4);
+  box-shadow: 0 0 10px rgba(182, 6, 6, 0.4);
 }
 .default-btn.active {
   background: #83282e;
@@ -3928,7 +3928,7 @@ ol {
   background-color: #0A1F2F !important;
 }
 .project__item-thumb {
-  border-bottom: 2px solid rgba(40, 219, 209, 0.3);
+  border-bottom: 2px solid rgba(134, 29, 36, 0.6);
   border-radius: inherit;
 }
 .project__item-thumb img {
@@ -3943,7 +3943,7 @@ ol {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 1px solid rgba(40, 219, 209, 0.3);
+  border: 1px solid rgba(134, 29, 36, 0.6);
   padding: 3px;
   top: 10px;
   right: 10px;
@@ -3964,7 +3964,7 @@ ol {
 .project__item-author a {
   width: 60px;
   height: 60px;
-  border: 2px solid rgba(40, 219, 209, 0.3);
+  border: 2px solid rgba(134, 29, 36, 0.6);
   border-radius: 5px;
   background-color: #0A1F2F;
 }
@@ -3982,7 +3982,7 @@ ol {
   background-color: #0A1F2F;
   padding: 0.3rem 1rem;
   clip-path: polygon(0% 0%, 90% 0%, 100% 62%, 100% 100%, 0% 100%);
-  border: 2px solid rgba(40, 219, 209, 0.3);
+  border: 2px solid rgba(134, 29, 36, 0.6);
   border-left: none;
   border-top: none;
   font-weight: 600;
@@ -4064,7 +4064,7 @@ ol {
   min-width: 250px;
 }
 .project__item2:hover {
-  border-color: rgba(40, 219, 209, 0.3);
+  border-color: rgba(134, 29, 36, 0.6);
 }
 .project__item2:hover .project__item2-content h4 a {
   color: #83282e;
@@ -4496,7 +4496,7 @@ ol {
 }
 .widget.widget-search .widget-search-inner .form-control:focus {
   box-shadow: none;
-  border-color: rgba(40, 219, 209, 0.3);
+  border-color: rgba(134, 29, 36, 0.6);
 }
 .widget.widget-search .widget-search-inner .search-icon {
   background-color: #83282e;
@@ -4795,7 +4795,7 @@ ol {
   box-shadow: none;
   background-color: #02121D;
   color: #C1C7CB;
-  border-color: rgba(40, 219, 209, 0.3);
+  border-color: rgba(134, 29, 36, 0.6);
 }
 .newsletter__form button {
   right: 0;
