@@ -4102,12 +4102,13 @@ ol {
   place-items: center;
   border-radius: 4px;
   background-color: #0A1F2F;
-  color: #D1B464;
+  color: #83282e;
   border: 1px solid rgba(40, 219, 209, 0.1);
 }
 .project__slider2-prev:hover, .project__slider2-next:hover {
-  background: radial-gradient(ellipse farthest-corner at right bottom, #8A6E2F 40%, transparent 80%),
-  radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 100%);
+  /* background: radial-gradient(ellipse farthest-corner at right bottom, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 100%); */
+  background-color:  #83282e;
    color: #fff;
 }
 
@@ -4258,7 +4259,7 @@ ol {
   background: #83282e;
   text-align: center;
   border-radius: 5px;
-  color: #02121D;
+  color: #fff;
 }
 .scrollToTop:hover {
   -webkit-transform: translateY(-5px);
