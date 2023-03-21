@@ -4281,7 +4281,7 @@ ol {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border: 1px solid rgba(134, 29, 36, 0.4);
+  border: 1px solid rgba(134, 29, 36, 0.6);
   display: inline-grid;
   place-items: center;
   border-radius: 5px;
