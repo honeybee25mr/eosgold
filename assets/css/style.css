@@ -20,6 +20,7 @@ Tags: crypto, IGO, IDO, Game launching, web 3,metaverse
  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,500;1,600&display=swap');
 html {
   line-height: 1.15;
   /* 1 */
@@ -358,7 +359,7 @@ body {
   color: #C1C7CB;
   font-size: 1rem;
   line-height: 1.625;
-  font-family: "Roboto", 'Noto Sans KR', sans-serif;
+  font-family: 'Poppins', "Roboto", 'Noto Sans KR', sans-serif;
   /* background-color: #02121D; */
   background-color: #7694a9;
 }
@@ -871,7 +872,7 @@ a {
 }
 
 .padding-top {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 @media (min-width: 992px) {
   .padding-top {
@@ -2389,7 +2390,7 @@ ol {
 }
 @media (min-width: 992px) {
   .farming__content {
-    width: calc(100% - 110px);
+    width: 100%;
   }
 }
 .farming__content-title p {
@@ -4182,15 +4183,19 @@ ol {
   transition: all 0.3s ease;
   border-radius: 1rem;
 }
+.work__item-content {
+  padding: 4rem 0;
+}
 .work__item-content h4 {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor:auto;
 }
 .work__item-content p {
-  max-inline-size: 45ch;
+  max-inline-size: 85ch;
   margin-inline: auto;
   text-align: left;
 }
@@ -5109,30 +5114,51 @@ section.subPage.lastPage .innerWrap .contWrap {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.zindex999 {  
-  z-index: 99;
+.worldviewback {
+  background: url(../images/work/eosred.png);
+  border-radius: 2rem;
+  background-size: cover;
+  padding: 12rem 0 16rem;
 }
-.zindex99 {
+
+
+.zindex19 {
   position: relative;
-  z-index: 99;
-}
-.zindex59 {
-  position: relative;
-  z-index: 59;
-}
-.zindex49 {
-  position: relative;
-  z-index: 49;
-}
-.zindex39 {
-  position: relative;
-  z-index: 39;
+  z-index: 19;
 }
 .zindex29 {
   position: relative;
   z-index: 29;
 }
-.zindex19 {
+.zindex39 {
   position: relative;
-  z-index: 19;
+  z-index: 39;
+}
+.zindex49 {
+  position: relative;
+  z-index: 49;
+}
+.zindex59 {
+  position: relative;
+  z-index: 59 !important;
+}
+.zindex99 {
+  position: relative;
+  z-index: 99 !important;
+}
+.zindex999 {  
+  z-index: 999 !important;
+}
+
+.d-flex {
+  display: flex;
+}
+.j-c-sb {
+  justify-content: space-between;
+}
+.j-c-sa {
+  justify-content: space-around;
+}
+.a-i-c {
+  align-items: center;
 }
