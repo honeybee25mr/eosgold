@@ -1283,6 +1283,25 @@ ol {
     width: 200px;
   }
 }
+
+.header-wrapper .menu-area .social__link {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  margin-right: 2rem;
+}
+@media not all and (pointer: coarse) {
+  .header-wrapper .menu-area .social__link:hover {
+    color: #4cedaa;
+    background-color: transparent;
+  }
+}
 .header-wrapper .menu-area .wallet-btn {
   width: 35px;
   height: 35px;
@@ -3190,7 +3209,7 @@ ol {
   height: 10px;
   border-radius: 10px;
   background-color: #4cedaa;
-  bottom: -65px;
+  bottom: -60px;
   z-index: 1;
 }
 @media (min-width: 992px) {
@@ -3812,6 +3831,9 @@ ol {
   font-size: 1.125rem;
   color: #fff;
 }
+.footer__content img {
+  width: 15em;
+}
 .footer__copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -4317,16 +4339,12 @@ ol {
   }
 }
 
-.team__item {
-  background-color: #0A1F2F;
-  border-radius: 5px;
-}
 .team__item:hover .team__thumb img {
-  -webkit-transform: scale(1.06);
-  -moz-transform: scale(1.06);
-  -ms-transform: scale(1.06);
-  -o-transform: scale(1.06);
-  transform: scale(1.06);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
   filter: grayscale(0);
 }
 .team__item:hover .team__content h4 a {
@@ -4350,7 +4368,8 @@ ol {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   object-fit: cover;
-  filter: grayscale(1);
+  filter: grayscale(0);
+  width: 15em;
 }
 .team__content h4 a {
   -webkit-transition: all 0.3s ease;
@@ -4840,7 +4859,9 @@ ol {
 
 .cta__wrapper {
   margin: auto;
-  background-color: #0A1F2F;
+  /* background-color: #0A1F2F; */
+  background: url(../images/newsletter/intellaXbanner.png);
+  background-size: cover;
   border-radius: 15px;
   padding-inline: 15px;
   text-align: center;
