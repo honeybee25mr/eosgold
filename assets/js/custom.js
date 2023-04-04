@@ -237,7 +237,7 @@ function scrollFunc(e) {
     scrollTop = this.scrollY;
 
     for(var i=0; i< totalNum ; i++){
-        imageAll[i].style.transform = "perspective(400px) translateZ("+ scrollTop/(5*(totalNum-i)) +"px)";
+        imageAll[i].style.transform = "perspective(500px) translateZ("+ scrollTop/(5*(totalNum-i)) +"px)";
         console.log(scrollTop , scrollTop / (5*(totalNum-i)) );
     }
 };
@@ -256,3 +256,9 @@ function loop() {
 
     window.requestAnimationFrame(loop);
 };
+
+
+// title fade out
+$(window).scroll(function () {
+	$(".logo_big").css("opacity", 1 - $(window).scrollTop() / 200);
+});

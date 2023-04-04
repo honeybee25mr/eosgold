@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600.02" height="715.335" viewBox="0 0 600.02 715.335"><g transform="matrix(0.829, -0.559, 0.559, 0.829, 0, 309.536)" fill="none" stroke="#514f9e" stroke-width="1" stroke-dasharray="4"><rect width="354.6" height="443.451" stroke="none"/><rect x="0.5" y="0.5" width="353.6" height="442.451" fill="none"/></g><g transform="matrix(0.829, -0.559, 0.559, 0.829, 150.788, 447.059)" fill="none" stroke="#514f9e" stroke-width="1" stroke-dasharray="4"><rect width="323.6" height="323.6" stroke="none"/><rect x="0.5" y="0.5" width="322.6" height="322.6" fill="none"/></g><g transform="matrix(0.829, -0.559, 0.559, 0.829, 114.068, 307.407)" fill="none" stroke="#514f9e" stroke-width="1" stroke-dasharray="4"><rect width="323.6" height="314.6" stroke="none"/><rect x="0.5" y="0.5" width="322.6" height="313.6" fill="none"/></g><g transform="matrix(0.829, -0.559, 0.559, 0.829, 95.45, 182.073)" fill="none" stroke="#514f9e" stroke-width="1" stroke-dasharray="4"><rect width="325.6" height="373.6" stroke="none"/><rect x="0.5" y="0.5" width="324.6" height="372.6" fill="none"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 600 715.3" style="enable-background:new 0 0 600 715.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#68F37F;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#68F37F;stroke-width:0.9999;stroke-miterlimit:3.9994;stroke-dasharray:3.9994;}
+</style>
+<g transform="matrix(0.829, -0.559, 0.559, 0.829, 0, 309.536)">
+	
+		<rect x="0" y="0" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 354.6006 443.4505)" class="st0" width="354.6" height="443.5"/>
+	
+		<rect x="0.5" y="0.5" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 354.6006 443.4505)" class="st1" width="353.6" height="442.5"/>
+</g>
+<g transform="matrix(0.829, -0.559, 0.559, 0.829, 150.788, 447.059)">
+	
+		<rect x="0" y="0" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 323.6004 323.5996)" class="st0" width="323.6" height="323.6"/>
+	
+		<rect x="0.5" y="0.5" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 323.6004 323.5996)" class="st1" width="322.6" height="322.6"/>
+</g>
+<g transform="matrix(0.829, -0.559, 0.559, 0.829, 114.068, 307.407)">
+	
+		<rect x="0" y="0" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 323.6004 314.5996)" class="st0" width="323.6" height="314.6"/>
+	
+		<rect x="0.5" y="0.5" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 323.6004 314.5996)" class="st1" width="322.6" height="313.6"/>
+</g>
+<g transform="matrix(0.829, -0.559, 0.559, 0.829, 95.45, 182.073)">
+	
+		<rect x="0" y="0" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 325.6005 373.5996)" class="st0" width="325.6" height="373.6"/>
+	
+		<rect x="0.5" y="0.5" transform="matrix(-1 2.549968e-06 -2.549968e-06 -1 325.6005 373.5996)" class="st1" width="324.6" height="372.6"/>
+</g>
+</svg>
