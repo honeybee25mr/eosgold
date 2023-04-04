@@ -5286,3 +5286,7 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 .tier__item, .benifit__wrapper {
   backdrop-filter: blur(5px);
 }
+
+.text-black {
+  color: black;
+}
