@@ -3278,7 +3278,7 @@ ol {
   display: inline-grid;
   place-items: center;
   border-radius: 2px;
-  background-color: #4cedaa;
+  background-color: #68f37f;
   color: #fff;
   z-index: 1;
 }
@@ -5228,16 +5228,20 @@ section.subPage.lastPage .innerWrap .contWrap {
 
 
 section.mainPage .imageWrap .parallax_image:nth-child(2){
-  filter: blur(15px);
-  animation: backdrop-filter-animation 15s ease 1 both;
+  animation: backdrop-filter-animation 15s ease-in-out 1 both;
 }
 
 @keyframes backdrop-filter-animation {
-  from {
-    filter: blur(15px) brightness(130%);
+  0% {
+    transform: translateY(0);
+    filter: blur(15px) saturate(130%);
+  }
+  20% {
+    transform: translateY(0);
   }
   to {
-    filter: blur(0px) brightness(100%);
+    transform: translateY(-180px);
+    filter: blur(0px) brightness(100%) saturate(100%);
   }
 }
 
@@ -5248,10 +5252,10 @@ section.mainPage .imageWrap .parallax_image:nth-child(3){
 
 @keyframes backdrop-filter-animation {
   from {
-    filter: blur(10px) brightness(130%);
+    filter: blur(10px) brightness(150%) saturate(130%);
   }
   to {
-    filter: blur(0px) brightness(100%);
+    filter: blur(0px) saturate(100%) brightness(100%);
   }
 }
 
@@ -5262,10 +5266,10 @@ section.mainPage .imageWrap .parallax_image:nth-child(4){
 
 @keyframes backdrop-filter-animation {
   from {
-    filter: blur(5px) brightness(130%);
+    filter: blur(5px) saturate(120%) brightness(130%);
   }
   to {
-    filter: blur(0px) brightness(100%);
+    filter: blur(0px) saturate(100%) brightness(100%);
   }
 }
 
@@ -5276,13 +5280,17 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 
 @keyframes backdrop-filter-animation {
   from {
-    filter: blur(3px) brightness(130%);
+    filter: blur(3px) saturate(120%) brightness(130%);
   }
   to {
-    filter: blur(0px) brightness(100%);
+    filter: blur(0px) saturate(100%) brightness(100%);
   }
 }
 
 .tier__item, .benifit__wrapper {
   backdrop-filter: blur(5px);
+}
+
+.text-black {
+  color: black;
 }

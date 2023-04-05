@@ -237,7 +237,7 @@ function scrollFunc(e) {
     scrollTop = this.scrollY;
 
     for(var i=0; i< totalNum ; i++){
-        imageAll[i].style.transform = "perspective(500px) translateZ("+ scrollTop/(5*(totalNum-i)) +"px)";
+        imageAll[i].style.transform = "perspective(200px) translateZ("+ scrollTop/(5*(totalNum-i)) +"px)";
         console.log(scrollTop , scrollTop / (5*(totalNum-i)) );
     }
 };
@@ -248,7 +248,7 @@ function loop() {
     my += (y - my) * speed;
 
     imageAll[0].style.transform =
-        "translate3d(" + mx / 140 + "px ," + -scrollTop * 0.22 + "px , 0px)";
+        "translate3d(" + mx / 30 + "px ," + -scrollTop * 0.5 + "px , 0px)";
     parallax_5.style.transform =
         "scale(1.1)translate(" + mx / 50 + "px ," + -scrollTop * 0.25 + "px)";
     parallax_6.style.transform =
