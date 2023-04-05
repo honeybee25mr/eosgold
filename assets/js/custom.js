@@ -233,12 +233,37 @@ window.onload = function() {
     loop();
 }
 
+// function scrollFunc(e) {
+//     scrollTop = this.scrollY;
+
+//     for(var i=0; i< totalNum ; i++){
+//         imageAll[i].style.transform = "perspective(200px) translateZ("+ scrollTop/(5*(totalNum-i)) +"px)";
+//         console.log(scrollTop , scrollTop / (5*(totalNum-i)) );
+//     }
+// };
+
+// 이미지별 이동될 범위 및 속도
+//(최대높이, 속도(높을수록 느리게))
+var bgTranslation = [
+    [0, 7000], // main_0.png
+    [-1000, -200], // main_1.png
+    [-900, -100], // main_2.png
+    [-800, -80], // main_3.png
+    [-1200, -30], // main_4.png
+    [500, -500], // main_5.png
+    [0, 0], // main_6.png
+]
 function scrollFunc(e) {
     scrollTop = this.scrollY;
-
     for(var i=0; i< totalNum ; i++){
-        imageAll[i].style.transform = "perspective(200px) translateZ("+ scrollTop/(5*(totalNum-i)) +"px)";
-        console.log(scrollTop , scrollTop / (5*(totalNum-i)) );
+        var translateY = scrollTop / bgTranslation[i][1]
+        if (Math.abs(translateY) > Math.abs(bgTranslation[i][0])) {
+            translateY = bgTranslation[i][0]
+        }
+        var translateZ = scrollTop / (5*(totalNum-i))
+        console.log(translateY, translateZ);
+        imageAll[i].style.transform = "perspective(350px) translateY("+ translateY +"px) translateZ("+ translateZ +"px)";
+        // console.log(scrollTop , scrollTop / (5*(totalNum-i)) );
     }
 };
 
@@ -260,5 +285,11 @@ function loop() {
 
 // title fade out
 $(window).scroll(function () {
-	$(".logo_big").css("opacity", 1 - $(window).scrollTop() / 200);
+    if ($(window).scrollTop() > 200) {
+	    $(".logo_big").css("opacity", 1 - $(window).scrollTop() / 800);
+        $(".logo_big").addClass("blur");
+    } else {
+        $(".logo_big").css("opacity", 1);
+        $(".logo_big").removeClass("blur");
+    }
 });
