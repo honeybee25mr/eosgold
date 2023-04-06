@@ -233,14 +233,6 @@ window.onload = function() {
     loop();
 }
 
-// function scrollFunc(e) {
-//     scrollTop = this.scrollY;
-
-//     for(var i=0; i< totalNum ; i++){
-//         imageAll[i].style.transform = "perspective(200px) translateZ("+ scrollTop/(5*(totalNum-i)) +"px)";
-//         console.log(scrollTop , scrollTop / (5*(totalNum-i)) );
-//     }
-// };
 
 // 이미지별 이동될 범위 및 속도
 //(최대높이, 속도(높을수록 느리게))
@@ -284,12 +276,14 @@ function loop() {
 
 
 // title fade out
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 200) {
-	    $(".logo_big").css("opacity", 1 - $(window).scrollTop() / 800);
-        $(".logo_big").addClass("blur");
-    } else {
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > 700) {
+            $(".logo_big").css("opacity", 1 - $(window).scrollTop() / 1200);
+            $(".logo_big").addClass("blur");
+            
+        } else {
         $(".logo_big").css("opacity", 1);
         $(".logo_big").removeClass("blur");
     }
 });
+

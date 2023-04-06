@@ -5049,19 +5049,29 @@ section.mainPage .logo_big {
   position: fixed;
   width: 100%;
   z-index: 999;
-  top: 13%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  animation: titleBlur 3s ease 1;
+  
 }
 .blur {
-  -webkit-filter: blur(10px);
+  animation: titleBlur 1.5s ease 1;
+  /* -webkit-filter: blur(10px);
   -moz-filter: blur(10px);
   -o-filter: blur(10px);
   -ms-filter: blur(10px);
-  filter: blur(10px);
+  filter: blur(10px); */
+}
+
+@keyframes titleBlur {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(10px);
+  }
 }
 
 
