@@ -5229,6 +5229,12 @@ section.subPage.lastPage .innerWrap .contWrap {
   padding: 12rem 0 16rem;
 }
 
+@media (max-width: 1200px) {
+  .worldviewback {
+    padding: 3rem 1rem;
+  }
+}
+
 
 .zindex19 {
   position: relative;
