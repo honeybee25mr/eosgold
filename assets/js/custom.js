@@ -286,4 +286,15 @@ $(window).on('scroll', function () {
         $(".logo_big").removeClass("blur");
     }
 });
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > 200) {
+            $(".main_title").css("opacity", 1 - $(window).scrollTop() / 500);
+            $(".main_title").addClass("blur");
+            
+        } else {
+        $(".main_title").css("opacity", 1);
+        $(".main_title").removeClass("blur");
+    }
+});
 
+ e

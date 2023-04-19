@@ -365,7 +365,8 @@ template {
  * Basic typography style for copy text
  */
 body {
-  color: #e9e9e9;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 1rem;
   line-height: 1.625;
   font-family: 'Poppins', "Roboto", 'Noto Sans KR', sans-serif;
@@ -381,6 +382,7 @@ h5,
 h6 {
   font-family: 'Roboto Slab',  'Noto Sans KR',sans-serif;
   color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   line-height: 1.25;
   font-weight: 700;
 }
@@ -925,7 +927,7 @@ a {
 
 /*=-=-=-=-=-=====> utility classes end here <======= -=-=-=-=-=-=-=*/
 /* @@@@@@@@@@@@@  Extend Property CSS start here  @@@@@@@@@@@@@@ */
-.rating, .upload__list, .widget.widget-info .widget-info__list-item, .widget.widget-service .widget-service__list-item a, .widget.widget-tags ul.widget-wrapper, .widget.widget-post ul.widget-wrapper li.widget-post-item, .widget.recent-product ul.widget-wrapper li.widget-post-item, .social, .apply-project__block-content .application-type, .project__slider2-nav, .project__infolist-item, .project__item2-name, .project__item2-inner, .project__item-bottom, .project__item-author, .lead-project, .account-form .form-group .checkgroup, .service__item-inner, .roadmap__item2-header, .tags, .tags-area, .single-quote, .comment-respond .add-comment .comment-form, .comments .comment-list .comment .com-content .com-title, .authors, .blog__content-bottom, .farming__list, .pro-details__token-title, .pro-details__item, .wallet-modal .wallet__list-item a, .wallet-modal .wallet__list, .section-header--left .section-header__content, .header-form .form-container, .header-form, .menu, .header-wrapper .menu-area, .header-wrapper, .header-top-area .left, .header-top-area, .project__item-amount, .project__item-amount div {
+.rating, .upload__list, .widget.widget-info .widget-info__list-item, .widget.widget-service .widget-service__list-item a, .widget.widget-tags ul.widget-wrapper, .widget.widget-post ul.widget-wrapper li.widget-post-item, .widget.recent-product ul.widget-wrapper li.widget-post-item, .social, .apply-project__block-content .application-type, .project__slider2-nav, .project__infolist-item, .project__item2-name, .project__item2-inner, .project__item-bottom, .project__item-author, .lead-project, .account-form .form-group .checkgroup, .service__item-inner, .roadmap__item2-header, .tags, .tags-area, .single-quote, .comment-respond .add-comment .comment-form, .comments .comment-list .comment .com-content .com-title, .authors, .blog__content-bottom, .farming__list, .pro-details__token-title, .wallet-modal .wallet__list-item a, .wallet-modal .wallet__list, .section-header--left .section-header__content, .header-form .form-container, .header-form, .menu, .header-wrapper .menu-area, .header-wrapper, .header-top-area .left, .header-top-area, .project__item-amount, .project__item-amount div, .equipped {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1113,16 +1115,25 @@ ol {
 .header-top-area .social-icons li {
   padding: 0;
 }
-
 .pro-details__info-item {
   padding: 10px;
 }
-
+.totalearn {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.totalearn div {
+  width: 100%;
+}
+.totalearn h3 {
+  margin-left: 1rem;
+}
 .newsletter__form input {
   padding: 15px;
 }
 
-.widget .widget__header, .token__info-list-item, .team__content, .apply-project__block-header, .farming__claim, .pro-details__token-item, .pro-details__info {
+.widget .widget__header, .token__info-list-item, .team__content, .apply-project__block-header, .farming__claim, .pro-details__token-item {
   padding: 20px;
 }
 
@@ -1159,7 +1170,8 @@ ol {
 .header-section {
   z-index: 999;
   /* background: #02121da1; */
-  background: transparent;
+  /* background: transparent; */
+  background: rgb(30, 20, 8, 60%);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 10px 0px rgb(30, 20, 8, 5%);
@@ -1746,6 +1758,9 @@ ol {
 /*============= wallet modal start=============*/
 .wallet-modal {
   background-color: rgba(2, 18, 29, 0.8);
+  z-index: 9999;
+  -webkit-transform: translateZ(9001px);
+  transform: translateZ(9001px);  
 }
 .wallet-modal .modal-content {
   background-color: #0A1F2F;
@@ -1932,8 +1947,8 @@ ol {
   gap: 20px;
 }
 .pro-details__item-thumb {
-  width: 90px;
-  height: 90px;
+  width: 300px;
+  height: 300px;
   border: 2px solid rgba(104, 243, 127, 0.1);
   border-radius: 5px;
 }
@@ -1944,10 +1959,6 @@ ol {
   .pro-details__item-content {
     width: calc(100% - 110px);
   }
-}
-.pro-details__info {
-  background-color: rgba(104, 243, 127, 0.2);
-  border-radius: 5px;
 }
 .pro-details__info-item {
   background-color: #0A1F2F;
@@ -2394,18 +2405,19 @@ ol {
 }
 @media (min-width: 1200px) {
   .farming__item-body {
-    padding: 40px;
+    padding: 30px;
   }
 }
 .farming__thumb {
-  width: 30%;
-  max-width: 400px;
+  width: 50%;
+  max-width: 300px;
   border-radius: 5px;
   border: 2px solid rgba(104, 243, 127, 0.9);
 }
 @media (min-width: 992px) {
   .farming__thumb {
     margin-bottom: 0;
+    margin: auto;
   }
 }
 .farming__thumb img {
@@ -2425,6 +2437,12 @@ ol {
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
+/* .farming__content ul {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 1rem 0rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+} */
 .farming__content > p {
   max-inline-size: 70ch;
 }
@@ -3097,7 +3115,7 @@ ol {
 }
 
 .pt-30 {
-  padding-top: 24px;
+  padding-top: 30px;
 }
 @media (min-width: 768px) {
   .pt-30 {
@@ -4175,7 +4193,12 @@ ol {
   background-color: #0A1F2F;
   color: #fff;
 }
-
+.project .form-floating {
+  width: auto;
+}
+.project .form-select {
+  padding: 0 2rem;
+}
 .apply-project__block {
   background-color: #0A1F2F;
   border-radius: 5px;
@@ -4199,18 +4222,18 @@ ol {
   color: #C1C7CB;
 }
 .apply-project__block-content .form-floating > .form-control,
-.apply-project__block-content .form-floating .form-select {
+.form-select {
   background-color: #02121D;
   color: #C1C7CB;
   border: 1px solid rgba(104, 243, 127, 0.1);
 }
 .apply-project__block-content .form-floating > .form-control:focus,
-.apply-project__block-content .form-floating .form-select:focus {
+.form-select:focus{
   box-shadow: none;
   border-color: rgba(104, 243, 127, 0.4);
 }
 .apply-project__block-content .form-floating > .form-control:focus ~ label,
-.apply-project__block-content .form-floating .form-select:focus ~ label {
+.form-select:focus ~ label {
   color: rgba(104, 243, 127, 0.5);
 }
 .apply-project__block-content .outline-btn {
@@ -5087,6 +5110,13 @@ section.mainPage .logo_big {
   justify-content: center;
   
 }
+section.mainPage .main_title{
+  position: fixed;
+  z-index: 999;
+  bottom: 15%;
+  width: 100%;
+}
+
 .blur {
   animation: titleBlur 1.5s ease 1;
   /* -webkit-filter: blur(10px);
@@ -5374,18 +5404,18 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 .tier__item, .benifit__wrapper {
   backdrop-filter: blur(5px);
 }
-
 .text-black {
   color: black !important;
 }
-
 .text-primary {
   color:#68f37f !important;
 }
-
+.tabmenuRight a, .project .form-select {
+  float: right;
+  width: auto;
+}
 .tabmenuRight a {
   margin-top: 1.5rem;
-  float: right;
 }
 .badge.free {
   background-color: #68f37f;
@@ -5402,4 +5432,15 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 .badge.ancient {
   background-color: #790914;
   color: #ffffff;
+}
+
+.equipped .pro-details__info-item {
+  margin: auto;
+  flex: 1;
+  background-color: transparent;
+}
+.equipped img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
 }
