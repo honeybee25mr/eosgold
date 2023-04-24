@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Primary Meta Tags -->
+    <title>EOS GOLD</title>
+    <meta name="title" content="EOS GOLD">
+    <meta name="description"
+        content="EOS GOLD is a Web 3 Metaverse IGO">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- vendors css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- main css for template -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg--primary-color">
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+
+
+
+    <!-- ==========Header Section Starts Here========== -->
+    <header class="header-section">
+        <div class="container">
+            <div class="header-holder">
+                <div class="header-primary d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="brand-logo d-none d-lg-inline-block">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-wrapper justify-content-lg-end">
+                        <div class="mobile-logo d-lg-none">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="menu-area">
+                            <ul class="menu">
+                                <li>
+                                    <a href="gameplay.html" class="text-primary">GamePlay</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Gacha</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Gacha1</a></li>
+                                        <li><a href="#">Gacha2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">SHOP</a>
+                                    <ul class="submenu">
+                                        <li><a href="nfts.html">something NFTs</a></li>
+                                        <li><a href="nftOthers.html">Others</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Stacking</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Stacking1</a></li>
+                                        <li><a href="farming.html">Stacking2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-solid fa-globe"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="#">EN</a></li>
+                                        <li><a href="#">KR</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-solid fa-user"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="mypage.html">My Page</a></li>
+                                        <li><a href="myInventory.html">Inventory</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a class="wallet-btn" href="#" data-bs-toggle="modal" data-bs-target="#wallet-option">
+                                <span>Connect
+                                </span> <i class="fa-solid fa-wallet"></i></a>
+
+                            <!-- toggle icons -->
+                            <div class="header-bar d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- connect wallet modal start -->
+    <div class="wallet-modal modal fade" id="wallet-option" tabindex="-1" aria-labelledby="choose-wallet"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">Connect Your Wallet</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please select a wallet from below to connect for Launching your IGO's</p>
+                    <ul class="wallet__list">
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/metamask.svg"
+                                        alt="metamask">
+                                </span> </a></li>
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/coinbase.svg"
+                                        alt="coinbase">
+                                </span> </a></li>
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/bitski.svg"
+                                        alt="bitski">
+                                </span></a></li>
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/venly.svg"
+                                        alt="venly Wallet">
+                                </span></a></li>
+                        <li class="wallet__list-item"><a href="#"> <span><img
+                                        src="assets/images/wallet/wallet-connect.svg" alt=" Wallet connect">
+                                </span></a></li>
+                    </ul>
+                    <p>By connecting your wallet, you agree to our <a href="#">Terms of Service</a> and our <a
+                            href="#">Privacy Policy</a> .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connect wallet modal end -->
+
+
+    
+    <section class="tabmenuRight bg--primary-color zindex99 padding-top">
+        <div class="container">
+            <div class="section-header section-header--middle padding-top">
+                <div class="section-header__content">
+                    <div class="section-header__titlebar">
+                        <p class="section-header__subtitle">My NFTs</p>
+                        <h2 class="section__header__title">Inventory</h2>
+                    </div>
+                </div>
+            </div>
+            <a href="mypage.html" class="default-btn default-btn--small"><span>My page</span> <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+
+
+    <!-- ================> my info start here <================== -->
+    <section class="bg--primary-color">
+        <div class="padding-top padding-bottom">
+            <div class="container">
+                <div class="farming__wrapper">              
+                    <div class="section-header section-header--left">
+                        <div class="section-header__content">
+                            <div class="section-header__titlebar">
+                                <h3 class="section__header__title">Equipped Character</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <div class="farming__item">
+                                <div class="farming__item-header">
+                                    <div class="farming__thumb">
+                                        <img src="assets/images/igo/item/bot06.png" alt="myCharacter">
+                                    </div>
+                                    <div class="farming__content">                                
+                                        <div class="pro-details__info">
+                                            <div class="row g-3">                                        
+                                                <div class="pro-details__item-content">
+                                                    <h4 class="pro-details__info-name">Combat Point</h4>
+                                                    <h3>2,564,987,132</h4>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Normal Damage
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            1,000,000
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Critical Damage
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            1,654,987
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned Gold
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            1,300,000
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="farming__wrapper pt-30">                
+                    <div class="section-header section-header--left">
+                        <div class="section-header__content">
+                            <div class="section-header__titlebar">
+                                <h3 class="section__header__title">Equipped NFTs</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="farming__item">
+                                <div class="farming__item-header">
+                                    <div class="farming__content">
+                                        <div class="pro-details__info">
+                                            <div class="row g-3 equipped">
+                                                <div class="col-lg-4 col-md-12 text-center">
+                                                    <img src="assets/images/igo/item/nft01.jpg" alt="myCharacter">
+                                                </div>
+                                                <div class="col-lg-8 col-md-12">
+                                                    <div class="pro-details__info-item">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                            <div class="text-end padding-top20">
+                                                <button type="" class="default-btn default-btn--small">Upgrade</button>
+                                                <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                                <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="farming__item">
+                                <div class="farming__item-header">
+                                    <div class="farming__content">
+                                        <div class="pro-details__info">
+                                            <div class="row g-3 equipped">
+                                                <div class="col-lg-4 col-md-12 text-center">
+                                                    <img src="assets/images/tier/03.png" alt="guild">
+                                                </div>
+                                                <div class="col-lg-8 col-md-12">
+                                                    <div class="pro-details__info-item">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-end padding-top20">
+                                                <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                                <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================> my info end here <================== -->
+
+
+    
+    <section class="faq padding-top padding-bottom shape-1r bg--blackgraident-color" id="faq">
+        <div class="container">
+            <div class="section-header section-header--middle">
+                <div class="section-header__content">
+                    <div class="section-header__titlebar">
+                        <h2 class="section__header__title">My NFTs</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <ul class="faq__tab nav nav-pills mb-5" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-character-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-character" type="button" role="tab" aria-controls="pills-character"
+                            aria-selected="true">Character</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-bot-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-bot" type="button" role="tab" aria-controls="pills-bot"
+                            aria-selected="false">Bot</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-guild-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-guild" type="button" role="tab" aria-controls="pills-guild"
+                            aria-selected="false">Guild Flag</button>
+                    </li>
+                </ul>
+                <div class="tab-content faq__content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-character" role="tabpanel" aria-labelledby="pills-character-tab">
+                        <div class="row gy-3 gx-5">
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="farming__item">
+                                    <div class="farming__item-header">
+                                        <div class="farming__content">
+                                            <div class="pro-details__info">
+                                                <div class="row g-3">
+                                                    <div class="col-12 text-center">
+                                                        <img src="assets/images/igo/item/nft01.jpg" alt="myCharacter">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                    <div class="text-center padding-bottom20">
+                                        <button type="" class="default-btn default-btn--small">Upgrade</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="farming__item">
+                                    <div class="farming__item-header">
+                                        <div class="farming__content">
+                                            <div class="pro-details__info">
+                                                <div class="row g-3">
+                                                    <div class="col-12 text-center">
+                                                        <img src="assets/images/igo/item/nft01.jpg" alt="myCharacter">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                    <div class="text-center padding-bottom20">
+                                        <button type="" class="default-btn default-btn--small">Upgrade</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="farming__item">
+                                    <div class="farming__item-header">
+                                        <div class="farming__content">
+                                            <div class="pro-details__info">
+                                                <div class="row g-3">
+                                                    <div class="col-12 text-center">
+                                                        <img src="assets/images/igo/item/nft01.jpg" alt="myCharacter">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                    <div class="text-center padding-bottom20">
+                                        <button type="" class="default-btn default-btn--small">Upgrade</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-bot" role="tabpanel" aria-labelledby="pills-bot-tab">
+                        <div class="row gy-3 gx-5">
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="farming__item">
+                                    <div class="farming__item-header">
+                                        <div class="farming__content">
+                                            <div class="pro-details__info">
+                                                <div class="row g-3">
+                                                    <div class="col-12 text-center">
+                                                        <img src="assets/images/igo/item/bot01.png" alt="myCharacter">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                    <div class="text-center padding-bottom20">
+                                        <button type="" class="default-btn default-btn--small">Upgrade</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="farming__item">
+                                    <div class="farming__item-header">
+                                        <div class="farming__content">
+                                            <div class="pro-details__info">
+                                                <div class="row g-3">
+                                                    <div class="col-12 text-center">
+                                                        <img src="assets/images/igo/item/bot06.png" alt="myCharacter">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                    <div class="text-center padding-bottom20">
+                                        <button type="" class="default-btn default-btn--small">Upgrade</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-guild" role="tabpanel" aria-labelledby="pills-guild-tab">
+                        <div class="row gy-3 gx-5">
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="farming__item">
+                                    <div class="farming__item-header">
+                                        <div class="farming__content">
+                                            <div class="pro-details__info">
+                                                <div class="row g-3">
+                                                    <div class="col-12 text-center">
+                                                        <img src="assets/images/tier/03.png" alt="myCharacter">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h6>NFT name</h6>
+                                                        <p>Lv.045 <span class="text-primary">+3</span></p>
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                    <div class="text-center padding-bottom20">
+                                        <button type="" class="default-btn default-btn--small">Upgrade</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Unmount</button>
+                                        <button type="" class="default-btn default-btn--small default-btn--secondary">Recovery</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================> Footer section start here <================== -->
+    <footer class="footer bg--black-color zindex59" style="background-image: url(assets/images/banner/main_2.png);">
+        <div class="footer__wrapper padding-top padding-bottom">
+            <div class="container">
+                <div class="footer__content text-center">
+                    <a href="https://www.neowiz.com/neowiz/" target="_blank"><img src="assets/images/team/neowiz.png" alt="neowiz"></a>
+                    <a href="http://bluepotion.co.kr/" target="_blank"><img src="assets/images/team/bluepotion.png" alt="bluepotion"></a>
+                    <a href="https://intellax.io/" target="_blank"><img src="assets/images/team/intellaX.png" alt="intellaX"></a>
+                    <ul class="social justify-content-center">
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-discord"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-twitch"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="text-center py-4">
+                    <a class=" mb-0">Terms of Use | </a>
+                    <a class=" mb-0">Privacy Policy | </a>
+                    <a class=" mb-0">Cookie Policies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================> Footer section end here <================== -->
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop zindex999"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+
+
+    <!-- vendor plugins -->
+    <script src=" assets/js/jquery-3.6.0.min.js">
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+
+    <!-- template js -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

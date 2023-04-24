@@ -884,9 +884,17 @@ a {
   bottom: -5px;
   right: -25px;
 }
-
+.padding-top20 {
+  padding-top: 20px;
+}
+.padding-top40 {
+  padding-top: 40px;
+}
 .padding-top {
   padding-top: 80px;
+}
+.margin-top {
+  margin-top: 1rem;
 }
 @media (min-width: 992px) {
   .padding-top {
@@ -896,6 +904,9 @@ a {
 
 .padding-bottom {
   padding-bottom: 90px;
+}
+.padding-bottom20 {
+  padding-bottom: 20px;
 }
 @media (min-width: 992px) {
   .padding-bottom {
@@ -1414,6 +1425,7 @@ ol {
     font-weight: 600;
     border-bottom: 1px solid rgba(104, 243, 127, 0.1);
     border-radius: 5px;
+    text-shadow: none;
   }
   .menu li .submenu li a:hover, .menu li .submenu li a.active {
     background: #68f37f;
@@ -1934,8 +1946,23 @@ ol {
   transform: none;
 }
 
+.gameplayEarn {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 2fr 3fr;
+  grid-gap: 2rem;
+  grid-column-gap: 2rem;
+  grid-row: auto;
+}
+@media (max-width: 992px) {
+  .gameplayEarn {
+    display: grid;
+    grid-auto-flow: row;
+  } 
+}
+
 .pro-details__block {
-  background-color: #0A1F2F;
+  background-color: #000;
   border-radius: 5px;
 }
 @media (min-width: 992px) {
@@ -1960,8 +1987,13 @@ ol {
     width: calc(100% - 110px);
   }
 }
+.pro-details__item-content h3 span{
+  font-size: 1.5rem;
+  color: #68f37f;
+}
 .pro-details__info-item {
-  background-color: #0A1F2F;
+  background-color: rgba(40, 219, 209, 0.2);
+  border-radius: 5px;
   border-radius: 5px;
 }
 .pro-details__info-name {
@@ -2063,6 +2095,20 @@ ol {
 }
 .pro-details__img img {
   object-fit: cover;
+}
+.claimToken {
+  border: 1px solid rgba(104, 243, 127, 0.5);
+  border-radius: 0.725rem;
+}
+.claimToken div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.2rem 0;
+  margin: auto;
+}
+.claimToken a {
+  margin-left: 1rem;
 }
 
 .gap-20 {
@@ -2379,10 +2425,12 @@ ol {
   background-color: #68f37f;
   color: #02121D;
 }
-
 .farming__item {
   background-color: rgba(0,0,0,0.45);
   border-radius: 10px;
+}
+.farming__item.selected {
+  border: 1px solid rgba(104, 243, 127, 0.5);
 }
 .farming__item-header {
   cursor: pointer;
@@ -2492,6 +2540,9 @@ ol {
 }
 .farming__claim-title h4 {
   color: #68f37f;
+}
+.MyNFTs > .farming__item-header {
+  padding: 0 !important;
 }
 
 .faq__tab {
@@ -3893,6 +3944,7 @@ ol {
   background: #68f37f;
   border: 1px solid transparent;
   font-weight: 600;
+  text-shadow: none;
 }
 @media (min-width: 768px) {
   .default-btn {
@@ -4196,7 +4248,7 @@ ol {
 .project .form-floating {
   width: auto;
 }
-.project .form-select {
+.project .form-select, .farming__wrapper .form-select {
   padding: 0 2rem;
 }
 .apply-project__block {
@@ -5119,11 +5171,7 @@ section.mainPage .main_title{
 
 .blur {
   animation: titleBlur 1.5s ease 1;
-  /* -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px); */
+  pointer-events: none;
 }
 
 @keyframes titleBlur {
@@ -5410,7 +5458,7 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 .text-primary {
   color:#68f37f !important;
 }
-.tabmenuRight a, .project .form-select {
+.tabmenuRight a, .project .form-select, .farming__wrapper .form-select{
   float: right;
   width: auto;
 }
