@@ -5520,3 +5520,7 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
   transform: translateY(-50%);
   right: 2rem;
 }
+
+.farming__item .MyNFTs {
+  background-color: none !important;
+}
