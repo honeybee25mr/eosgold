@@ -943,7 +943,7 @@ a {
   flex-wrap: wrap;
 }
 
-.custom-upload, .cta__wrapper--bg-shapes, .newsletter__form form, .newsletter__wrapper--bg-shapes, .widget .widget__header, .token__info-list-item, .token__wrapper, .counter__section--uplift, .apply-project__block-header, .project--featured .section-header__titlebar, .project__item-top, .project__item-thumb, .project__item--completed1 .project__item-author a, .default-btn, .contact .form, .service__item-thumb.line-1, .service__item-thumb.line-2, .service__item-thumb.line-3, .service__item-thumb.line-4, .roadmap__item2, .roadmap__wrapper2, .roadmap__wrapper, .roadmap__item-inner--horiz-line, .roadmap__item-inner--vertical-line, .single-quote, .comment-respond h4, .comments .comment-title, .post-item-2 .post-inner .post-content .meta-post p span, .post-item-2 .post-inner .post-content .qute-content blockquote, .post-item-2 .post-inner .post-content .more-com .text-btn, .post-item-2 .post-inner .post-thumb, .post-item-2 .post-inner .post-thumb-container, .blog__meta-comment, .kyc__form .step h4, .kyc__form .form-header .stepIndicator, .banner__thumb, .wallet-modal .modal-header, .section-header, .menu-item-has-children > a, .header-bar, .header-primary, .header-top-area .social-icons li, .header-top, .header-section.header-fixed .header-holder, .header-section, .underlined, .shape-1r {
+.custom-upload, .cta__wrapper--bg-shapes, .newsletter__form form, .newsletter__wrapper--bg-shapes, .widget .widget__header, .token__info-list-item, .token__wrapper, .counter__section--uplift, .apply-project__block-header, .project--featured .section-header__titlebar, .project__item-top, .project__item-thumb, .project__item--completed1 .project__item-author a, .default-btn, .contact .form, .service__item-thumb.line-1, .service__item-thumb.line-2, .service__item-thumb.line-3, .service__item-thumb.line-4, .roadmap__item2, .roadmap__wrapper2, .roadmap__wrapper, .roadmap__item-inner--horiz-line, .roadmap__item-inner--vertical-line, .single-quote, .comment-respond h4, .comments .comment-title, .post-item-2 .post-inner .post-content .meta-post p span, .post-item-2 .post-inner .post-content .qute-content blockquote, .post-item-2 .post-inner .post-content .more-com .text-btn, .post-item-2 .post-inner .post-thumb, .post-item-2 .post-inner .post-thumb-container, .blog__meta-comment, .kyc__form .step h4, .kyc__form .form-header .stepIndicator, .banner__thumb, .wallet-modal .modal-header, .section-header, .menu-item-has-children > a, .header-bar, .header-primary, .header-top-area .social-icons li, .header-top, .header-section.header-fixed .header-holder, .header-section, .underlined, .shape-1r, .accntlink {
   position: relative;
 }
 
@@ -1152,7 +1152,7 @@ ol {
   padding: 25px;
 }
 
-.widget.widget-author .widget-author__inner, .single-quote, .comment-respond .add-comment, .comment-respond h4, .comments .comment-list .com-item, .comments .comment-title, .farming__item-body, .farming__item-header, .stacking__content, .stacking__title, .kyc__form .step, .pro-details__desc-content section, .pro-details__block {
+.widget.widget-author .widget-author__inner, .single-quote, .comment-respond .add-comment, .comment-respond h4, .comments .comment-list .com-item, .comments .comment-title, .farming__item-body, .farming__item-header, .stacking__content, .stacking__title, .kyc__form .step, .pro-details__desc-content section, .pro-details__block, .section-header__content {
   padding: 30px;
 }
 
@@ -1335,6 +1335,7 @@ ol {
   padding: 0;
   font-family: 'Poppins', "Roboto", 'Noto Sans KR', sans-serif;
   font-weight: 600;
+  text-shadow: none;
 }
 .header-wrapper .menu-area .wallet-btn span {
   display: none;
@@ -1390,6 +1391,7 @@ ol {
 @media (min-width: 992px) {
   .menu li {
     position: relative;
+    margin: auto;
   }
   .menu li .submenu {
     position: absolute;
@@ -1809,7 +1811,7 @@ ol {
   font-size: 1.125rem;
 }
 .wallet-modal .modal-body a {
-  color: #68f37f;
+  /* color: #68f37f; */
 }
 .wallet-modal .wallet__list {
   margin-block: 30px;
@@ -1839,6 +1841,9 @@ ol {
   background-size: cover;
   background-position: center;
   padding-block: 100px;
+}
+.banner__content h1 span {
+  font-size: 2rem;
 }
 .banner__content p {
   font-size: 1.125rem;
@@ -2433,7 +2438,7 @@ ol {
   border: 1px solid rgba(104, 243, 127, 0.5);
 }
 .farming__item-header {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 @media (min-width: 992px) {
   .farming__item-header {
@@ -2481,9 +2486,10 @@ ol {
 }
 .farming__content ul {
   border: 1px solid rgba(255,255,255,0.2);
-  padding: 1rem 0rem;
+  padding: .5rem 1rem .5rem 2rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  list-style: circle;
 }
 /* .farming__content ul {
   border: 1px solid rgba(255,255,255,0.2);
@@ -3650,7 +3656,7 @@ ol {
   background: #0A1F2F;
   padding: 60px 50px;
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 15px;
 }
 .account-wrapper .account-title p {
@@ -4346,6 +4352,9 @@ ol {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 1px solid rgba(104, 243, 127, 0.02);
+  background-image: url(../images/tier/tier_back01.png);
+  background-size: cover;
+  background-position: top center;
 }
 .tier__inner:hover {
   border-color: rgb(104, 243, 127, 0.6);
@@ -4357,6 +4366,16 @@ ol {
 .tier__head p {
   padding-block: 26px;
   padding-inline: 30px;
+}
+.tier__body {
+  top: 25%;
+  padding: 20rem 5rem 15rem;
+}
+@media (max-width: 992px) {
+  .tier__body {
+    top: 25%;
+    padding: 15rem 1rem 10rem;
+  }
 }
 .tier__body h4 {
   color: #68f37f;
@@ -4922,14 +4941,7 @@ ol {
     display: none;
   }
 }
-.newsletter__wrapper--bg-shapes:before {
-  background-image: url(../images/newsletter/2.svg);
-  left: 0;
-}
-.newsletter__wrapper--bg-shapes:after {
-  background-image: url(../images/newsletter/1.svg);
-  right: 0;
-}
+
 .newsletter__form input {
   border-radius: 5px;
   padding-inline-end: 30%;
@@ -5491,4 +5503,20 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
   width: 100%;
   max-width: 300px;
   margin: auto;
+}
+.padding0 {
+  padding: 0 !important;
+}
+.boxcontainer .project__wrapper {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.timetk {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
 }
