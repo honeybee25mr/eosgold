@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Primary Meta Tags -->
+    <title>EOS GOLD</title>
+    <meta name="title" content="EOS GOLD">
+    <meta name="description"
+        content="EOS GOLD is a Web 3 Metaverse IGO">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- vendors css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <!-- main css for template -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg--primary-color">
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+
+
+    <!-- ==========Header Section Starts Here========== -->
+    <header class="header-section">
+        <div class="container">
+            <div class="header-holder">
+                <div class="header-primary d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="brand-logo d-none d-lg-inline-block">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-wrapper justify-content-lg-end">
+                        <div class="mobile-logo d-lg-none">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="menu-area">
+                            <ul class="menu">
+                                <li>
+                                    <a href="gameplay.html" class="text-primary">GamePlay</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Gacha</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Gacha1</a></li>
+                                        <li><a href="#">Gacha2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">SHOP</a>
+                                    <ul class="submenu">
+                                        <li><a href="nfts.html">something NFTs</a></li>
+                                        <li><a href="nftOthers.html">Others</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Stacking</a>
+                                    <ul class="submenu">
+                                        <li><a href="stacking.html">Stacking</a></li>
+                                        <li><a href="farming.html">Farming</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-solid fa-globe"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="#">EN</a></li>
+                                        <li><a href="#">KR</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-solid fa-user"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="mypage.html">My Page</a></li>
+                                        <li><a href="myInventory.html">Inventory</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a class="wallet-btn" href="#" data-bs-toggle="modal" data-bs-target="#wallet-option">
+                                <span>Connect
+                                </span> <i class="fa-solid fa-wallet"></i></a>
+
+                            <!-- toggle icons -->
+                            <div class="header-bar d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    
+    <section class="tabmenuRight bg--primary-color zindex99">
+        <div class="container">
+            <div class="section-header section-header--middle padding-top">
+                <div class="section-header__content">
+                    <div class="section-header__titlebar">
+                        <p class="section-header__subtitle">Staking</p>
+                        <h2 class="section__header__title">Server Voting</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="nfts.html" class="default-btn default-btn--small"><span>Alter</span> <i class="fa fa-arrow-right"></i></a> -->
+        </div>
+    </section>
+
+    
+    <section class="project bg--primary-color">
+        <div class="container">
+            <div class="section-header section-header--left">
+                <div class="section-header__content">
+                    <div class="section-header__titlebar">
+                        <h3 class="section__header__title">Voting Status</h3>
+                    </div>
+                    <div class="section-header__titlebar">
+                        <div class="d-flex align-items-center">
+                            <h4 class="section__header__title">Round Remaining</h4>
+                            <div class="roundTimer">
+                                90 : 00 : 00 : 00
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ================> Leaderboard section  start here <================== -->
+    <section class="leaderboard padding-bottom">
+        <div class="container">
+            <div class="leaderboard__wrapper">
+                <div class="table-responsive">
+                    <table class="table table-borderless leaderboard__table fold-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Server</th>
+                                <th scope="col" colspan="2">Round EG</th>
+                                <th scope="col">Total EG</th>
+                                <th scope="col">Ratio</th>
+                                <th scope="col">My EG</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="leaderboard__item view">
+                                <td>Limen</td>
+                                <td>
+                                    <div class="leaderboard--level-down"><i class="fa-solid fa-angle-down"></i> 234,500</div>
+                                </td>
+                                <td>100,000,000</td>
+                                <th scope="row">100,000,000</th>
+                                <td>30.2%</td>
+                                <td class="text-primary">100,000,000</td>
+                            </tr>
+                            <tr class="fold">
+                                <td colspan="3">
+                                    <h6>Vote to this Server</h6>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <label class="positionR">
+                                            <span class="positionA">EG</span>
+                                            <input class="servervoteinput">
+                                        </label>
+                                        <a href="#" class="default-btn default-btn--small"><span>Vote</span></i></a>
+                                    </div>
+                                </td>
+                                <td colspan="3">
+                                    <h6>Look-up Remaining</h6>
+                                    <div class="d-flex align-items-center justify-content-center">                                            
+                                        <div class="roundTimer">
+                                            90 : 00 : 00 : 00
+                                        </div>
+                                        <a href="#" class="default-btn default-btn--small"><span>Unvote</span></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="leaderboard__item view">
+                                <td>Eldir</td>
+                                <td>
+                                    <div class="leaderboard--level-freez"><i class="fa-solid fa-minus"></i></div>
+                                </td>
+                                <td>100,000,000</td>
+                                <th scope="row">100,000,000</th>
+                                <td>30.2%</td>
+                                <td class="text-primary">100,000,000</td>
+                            </tr>
+                            <tr class="leaderboard__item view">
+                                <td>Surt</td>
+                                <td>
+                                    <div class="leaderboard--level-up"><i class="fa-solid fa-angle-up"></i> 300,000</div>
+                                </td>
+                                <td>100,000,000</td>
+                                <th scope="row">100,000,000</th>
+                                <td>30.2%</td>
+                                <td class="text-primary">100,000,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ul class="pagination mt-5 justify-content-center">
+                    <li class="page-item disabled">
+                        <span class="page-link"><i class="fa-solid fa-angle-left"></i></span>
+                    </li>
+                    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ================> Leaderboard section  end here <================== -->
+
+
+    <section class="project bg--blackgraident-color padding-bottom">
+        <div class="container">
+            <div class="section-header section-header--left">
+                <div class="section-header__content">
+                    <div class="section-header__titlebar">
+                        <h3 class="section__header__title">Server Ranking</h3>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%; height: 600px;">
+                <canvas id="serverRanking"></canvas>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    <!-- ================> Footer section start here <================== -->
+    <footer class="footer bg--black-color zindex59" style="background-image: url(assets/images/banner/main_3.png);">
+        <div class="footer__wrapper padding-top padding-bottom">
+            <div class="container">
+                <div class="footer__content text-center">
+                    <a href="https://www.neowiz.com/neowiz/" target="_blank"><img src="assets/images/team/neowiz.png" alt="neowiz"></a>
+                    <a href="http://bluepotion.co.kr/" target="_blank"><img src="assets/images/team/bluepotion.png" alt="bluepotion"></a>
+                    <a href="https://intellax.io/" target="_blank"><img src="assets/images/team/intellaX.png" alt="intellaX"></a>
+
+                    <ul class="social justify-content-center">
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-discord"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-twitch"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="text-center py-4">
+                    <a class=" mb-0">Terms of Use | </a>
+                    <a class=" mb-0">Privacy Policy | </a>
+                    <a class=" mb-0">Cookie Policies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================> Footer section end here <================== -->
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+    <!-- vendor plugins -->
+    <script src=" assets/js/jquery-3.6.0.min.js">
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
+
+
