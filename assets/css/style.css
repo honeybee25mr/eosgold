@@ -367,7 +367,7 @@ template {
 body {
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.625;
   font-family: 'Poppins', "Roboto", 'Noto Sans KR', sans-serif;
   /* background-color: #02121D; */
@@ -406,7 +406,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.125rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h3 {
@@ -415,7 +415,7 @@ h3 {
 }
 
 h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.125rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h4 {
@@ -424,7 +424,7 @@ h4 {
 }
 
 h5 {
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.125rem + 0.15vw);
 }
 @media (min-width: 1200px) {
   h5 {
@@ -1154,6 +1154,15 @@ ol {
 
 .widget.widget-author .widget-author__inner, .single-quote, .comment-respond .add-comment, .comment-respond h4, .comments .comment-list .com-item, .comments .comment-title, .farming__item-body, .farming__item-header, .stacking__content, .stacking__title, .kyc__form .step, .pro-details__desc-content section, .pro-details__block, .section-header__content {
   padding: 30px;
+}
+
+@media(max-width:990px){  
+  .kyc__form .form-header .stepIndicator, .custom-upload, .stacking__project-item, .widget .widget__header, .token__info-list-item, .team__content, .apply-project__block-header, .farming__claim, .pro-details__token-item, .widget.widget-brochure .widget-brochure__inner, .project__item2, .widget.widget-author .widget-author__inner, .single-quote, .comment-respond .add-comment, .comment-respond h4, .comments .comment-list .com-item, .comments .comment-title, .farming__item-body, .farming__item-header, .stacking__content, .stacking__title, .kyc__form .step, .pro-details__desc-content section, .pro-details__block, .section-header__content {
+    padding: 8px;
+  }
+  .section-header__content {
+    padding: 8px 0;
+  }
 }
 
 .custom-upload, .stacking__project-item {
@@ -1936,6 +1945,12 @@ ol {
 .banner--style2 {
   padding-block-start: 120px;
   padding-block-end: 200px;
+}
+
+@media(max-width:990px){  
+  .banner--style2 {
+    padding-block-end: 100px;
+  }
 }
 .banner--style2 .banner__content p {
   font-size: 1.25rem;
@@ -3836,6 +3851,7 @@ ol {
 .leaderboard__table thead {
   background-color: #68f37f;
   color: #02121D;
+  text-shadow: none;
 }
 .leaderboard__table:nth-col(3) {
   background-color: red;
@@ -3844,6 +3860,7 @@ ol {
 .leaderboard__table th {
   vertical-align: middle;
   padding: 15px 25px;
+  text-align: center;
 }
 .leaderboard__item {
   background-color: #0A1F2F;
@@ -3873,6 +3890,82 @@ ol {
 .lead-project__content h6 a {
   color: #fff;
 }
+
+table.fold-table > tbody > tr.view td,
+table.fold-table > tbody > tr.view th {
+  cursor: pointer;
+}
+table.fold-table > tbody > tr.view td:first-child,
+table.fold-table > tbody > tr.view th:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+table.fold-table > tbody > tr.view td:first-child:before,
+table.fold-table > tbody > tr.view th:first-child:before {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 9px;
+  height: 16px;
+  margin-top: -8px;
+  font: 12px fontawesome;
+  content: "";
+  transition: all 0.3s ease;
+  color: #68f37f;
+}
+table.fold-table > tbody > tr.view.open td:first-child:before,
+table.fold-table > tbody > tr.view.open th:first-child:before {
+  transform: rotate(-180deg);
+  color: #68f37f;
+}
+table.fold-table > tbody > tr.fold {
+  display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+  display: table-row;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fold-content {
+  padding: 0.5em;
+}
+.fold a {
+  margin-left: 2rem;
+}
+.fold-content h3 {
+  margin-top: 0;
+}
+.fold-content > table {
+  border: 2px solid #ccc;
+}
+.fold-content > table > tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+.servervoteinput {
+  background-color: #000000;
+  color: #68f37f;
+  font-size: 1.2rem;
+  padding: .8rem 1.5rem;
+  border: none;
+}
+.servervoteinput input:focus{
+  border: 1px solid rgba(104, 243, 127, 0.4);
+}
+
+span.positionA{
+  right: 1rem;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.positionA {
+  position: absolute;
+}
+.positionR {
+  position: relative;
+}
+
 
 .error__wrapper p {
   font-size: 1.125rem;
@@ -3968,6 +4061,21 @@ ol {
 .default-btn--small {
   line-height: 40px;
   padding: 0 1.2rem;
+  margin: 0.5rem 0;
+}
+@media (max-width : 990px) {
+  .default-btn {
+    font-size: 0.9rem;
+  }
+  .default-btn--small {
+    padding: 0 0.8rem;
+  } 
+  .faq__tab .nav-link {
+    padding: 1rem 0.8rem;
+  }
+  .section-header--left {
+    margin-bottom: 8px;
+  }
 }
 .default-btn--secondary {
   background-color: transparent;
@@ -5523,4 +5631,22 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 
 .farming__item .MyNFTs {
   background-color: none !important;
+}
+
+.nftName video {
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  border-radius: 2rem;
+}
+
+.roundTimer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+section.min-1440 {
+  min-width: 1440px;
 }

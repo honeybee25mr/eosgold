@@ -297,4 +297,111 @@ $(window).on('scroll', function () {
     }
 });
 
- e
+
+
+//table fold
+$(function(){
+    $(".fold-table tr.view").on("click", function(){
+    $(this).toggleClass("open").next(".fold").toggleClass("open");
+    });
+});
+
+
+//serverRanking
+let labels = [ 'Limen','Eldir','Surt','Broken','Terna','Rebens','Norde', 'Muspel', 'Chronos'];
+let barChartData = {
+    labels: labels,
+    datasets: [
+        {
+            yAxisID: "ratio",
+            label: "Ratio%",
+            yAxisID: "ratio",
+            data: [30.2, 23.5, 20.1, 10.1, 5.0, 4.0, 3.0, 2.3, 1.7],
+            type: "line",
+            fill: false,
+            borderColor: "#fff",
+            borderWidth: 2,
+            pointBackgoundColor: '#68f37f',
+            pointBorderColor: '#10a7ff',
+            pointRadius: 5,
+        },
+        {
+            yAxisID: "bar",
+            label: "Round EG",
+            backgroundColor: "#0a1f2f",
+            borderColor: "#68f37f",
+            borderWidth: 2,
+            hoverBackgroundColor: "#68f37f",
+            data: [900000,700000,600000,300000,150000,120000,90000,70000,50000],
+        },
+    ],
+};
+window.onload = function () {
+    var ctx = document.getElementById("serverRanking").getContext("2d");
+    window.myBar = new Chart(ctx, {
+        type: "bar",
+        data: barChartData,
+        options: {      
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+                // callbacks: {
+                //     label: function(tooltipItem) {
+                //         return + Number(tooltipItem.yLabel) + "%";
+                //     }
+                // }                
+            },
+            fontColor: '#fff',
+            legend: 'right',
+            responsive: true,
+            title: {
+                display: false,
+            },
+            scales: {
+                barPercentage: 0.5,
+                xAxes: [{
+                    categoryPercentage: 0.5,
+                    ticks: {
+                        fontColor: '#fff',
+                        fontSize: 14,
+                        fontFamily: 'Poppins'
+                    },
+                    gridLines: {
+                        color: '#68f37f',
+                        paddingBottom: 10,
+                        drawOnChartArea: false,
+                    }
+                }],
+                yAxes: [{
+                    id: 'bar',
+                    stacked: true,
+                    display: false,
+                    position: "left",
+                    id: "bar",
+                    ticks: {
+                    beginAtZero: true,
+                    suggestedMin: 0,
+                    suggestedMax: 10,
+                    min: 0,
+                    },
+                },
+                {
+                    id: 'ratio',
+                    type: "linear",
+                    display: false,
+                    id: "ratio",
+                    ticks: {
+                    beginAtZero: true,
+                    suggestedMin: 0,
+                    suggestedMax: 10,
+                    min: 0,
+                    },
+                    callback: function(value, index, values) {
+                        return value + ' %';
+                    }
+                }]
+            }
+        }
+    });
+};
+
