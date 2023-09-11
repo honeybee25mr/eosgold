@@ -341,7 +341,8 @@ window.onload = function () {
     window.myBar = new Chart(ctx, {
         type: "bar",
         data: barChartData,
-        options: {      
+        options: {
+            maintainAspectRatio: false,
             tooltips: {
                 mode: 'index',
                 intersect: false,
