@@ -53,6 +53,11 @@ main {
   display: block;
 }
 
+.container.min1440 {
+  min-width: 1440px;
+  overflow: auto;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -810,7 +815,6 @@ a {
   content: "";
   display: table;
 }
-
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
@@ -973,12 +977,15 @@ a {
   font-weight: 400;
 }
 
-.rating, .team .social, .faq__tab, .wallet-modal .wallet__list-item a, .wallet-modal .modal-header {
+.rating, .team .social, .faq__tab, .wallet-modal .wallet__list-item a, .wallet-modal .modal-header, .wallet-modal .wallet__list {
   justify-content: center;
 }
 
-.upload__list, .project__infolist-item, .project__item2-inner, .project__item-bottom, .roadmap__item2-header, .comment-respond .add-comment .comment-form, .comments .comment-list .comment .com-content .com-title, .blog__content-bottom, .farming__list, .wallet-modal .wallet__list, .section-header--left .section-header__content, .header-wrapper, .header-top-area, .project__item-amount {
+.upload__list, .project__infolist-item, .project__item2-inner, .project__item-bottom, .roadmap__item2-header, .comment-respond .add-comment .comment-form, .comments .comment-list .comment .com-content .com-title, .blog__content-bottom, .farming__list, .section-header--left .section-header__content, .header-wrapper, .header-top-area, .project__item-amount {
   justify-content: space-between;
+}
+.wallet-modal .wallet__list {
+  justify-content: space-around;
 }
 
 .rating, .widget.widget-info .widget-info__list-item, .widget.widget-service .widget-service__list-item a, .widget.widget-post ul.widget-wrapper li.widget-post-item, .widget.recent-product ul.widget-wrapper li.widget-post-item, .social, .apply-project__block-content .application-type, .project__slider2-nav, .project__infolist-item, .project__item2-name, .project__item2-inner, .project__item-bottom, .project__item-author, .lead-project, .roadmap__item2-header, .comments .comment-list .comment .com-content .com-title, .blog__content-bottom, .farming__list, .pro-details__token-title, .wallet-modal .wallet__list, .header-wrapper .menu-area, .header-wrapper, .header-top-area, .project__item-amount {
@@ -1165,6 +1172,10 @@ ol {
   }
 }
 
+.project__item-amount span{
+  color: white;
+  font-size: 16px;
+}
 .custom-upload, .stacking__project-item {
   padding: 40px;
 }
@@ -1787,6 +1798,7 @@ ol {
 }
 .wallet-modal .modal-content {
   background-color: #0A1F2F;
+  border: 1px solid #333;
 }
 .wallet-modal .modal-header {
   border-bottom: none;
@@ -1809,8 +1821,8 @@ ol {
   color: #fff;
 }
 .wallet-modal .modal-header .btn-close {
-  top: 0;
-  right: 0;
+  top: -9px;
+  right: -9px;
   background-color: #68f37f;
 }
 .wallet-modal .modal-body {
@@ -1944,7 +1956,7 @@ ol {
 }
 .banner--style2 {
   padding-block-start: 120px;
-  padding-block-end: 200px;
+  padding-block-end: 120px;
 }
 
 @media(max-width:990px){  
@@ -4063,6 +4075,22 @@ span.positionA{
   padding: 0 1.2rem;
   margin: 0.5rem 0;
 }
+.default-btn--large {
+  line-height: 50px;
+  padding: .3rem 5rem;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+}
+.btn--disabled {
+  filter: grayscale(1) opacity(0.4);
+  -webkit-transform: skew(0);
+  -moz-transform: skew(0);
+  -ms-transform: skew(0);
+  -o-transform: skew(0);
+  transform: skew(0);
+  transition: all 0s ease;
+
+}
 @media (max-width : 990px) {
   .default-btn {
     font-size: 0.9rem;
@@ -4241,9 +4269,10 @@ span.positionA{
 .project__item-amount h6 {
   font-weight: 600;
   margin-left: 1rem;
+  margin-bottom: 0;
   background: rgba(0,0,0,0.5);
   backdrop-filter: blur(6px);
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.25rem;
 }
 .project__item-amount .progress {
@@ -4276,16 +4305,21 @@ span.positionA{
   border-radius: 5px;
   border: 1px solid transparent;
 }
+.project__item2.noimage {
+  background-image: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+}
 @media (min-width: 768px) {
   .project__item2 {
-    padding: 30px;
+    padding: 20px;
   }
 }
 .project__item2-inner {
   display: flex;
   flex-flow: column;
   align-items: start;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 .project__item2-name {
   gap: 20px;
@@ -4310,7 +4344,8 @@ span.positionA{
   color: #fff;
 }
 .project__item2 .project__item-amount {
-  min-width: 250px;
+  /* min-width: 250px; */
+  margin-bottom: 1rem;
 }
 .project__item2:hover {
   border-color: rgb(104, 243, 127, 0.6);
@@ -4614,20 +4649,9 @@ span.positionA{
   transition: all 0.3s ease;
   color: #fff;
 }
-.counter__wrapper {
-  box-shadow: 0 18px 30px rgba(0, 208, 255, 0.14);
-  border: 1px solid #2F3D5F;
-  border-radius: 10px;
-  padding: 60px 30px;
-  background-color: #02121D;
-}
-@media (min-width: 992px) {
-  .counter__wrapper {
-    padding: 50px 65px;
-  }
-}
-.counter__item h3 {
+#home h3 span{
   color: #68f37f;
+  margin-left: 1rem;
 }
 .counter__item p {
   font-size: 1.125rem;
@@ -4713,6 +4737,9 @@ span.positionA{
   background-color: #0A1F2F;
   padding: 20px;
   border-radius: 8px;
+}
+.p20 {
+  padding: 20px;
 }
 @media (min-width: 576px) {
   .token__allocation {
@@ -5585,23 +5612,22 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 .tabmenuRight a {
   margin-top: 1.5rem;
 }
-.badge.free {
+.badge.moving {
   background-color: #68f37f;
   color: #000;
 }
-.badge.special {
+.badge.waiting {
   background-color: #466fab;
   color: #fff;
 }
-.badge.legend {
-  background-color: #ffc107;
-  color: #000;
-}
-.badge.ancient {
+.badge.battle {
   background-color: #790914;
   color: #ffffff;
 }
-
+.badge.serching {
+  background-color: #ffc107;
+  color: #000;
+}
 .equipped .pro-details__info-item {
   margin: auto;
   flex: 1;
@@ -5649,4 +5675,67 @@ section.mainPage .imageWrap .parallax_image:nth-child(5){
 
 section.min-1440 {
   min-width: 1440px;
+}
+
+.width100{
+  width: 100% !important;
+}
+.mr0 {
+  margin-right: 0 !important;
+}
+.ml0 {
+  margin-left: 0 !important;
+}
+.mb0 {
+  margin-bottom: 0 !important;
+}
+.mr1 {
+  margin-right: .5rem;
+}
+.mr3 {
+  margin-right: 3rem;
+}
+.project__item2-content h2 {
+  margin-bottom: 0;
+}
+.flexDirection {
+  flex-direction: column;
+}
+.justisb {
+  justify-content: space-between;
+}
+.ruinimg img {
+  width: 40%;
+  max-width: 150px;
+  margin-right: 1rem;
+  border-radius: 0.3rem;
+}
+
+.equippedstatus {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seasontimeover div div{
+  filter: grayscale(0.9) opacity(0.8)
+}
+.noseasonpass {
+  position: relative;
+}
+.noseasonpass div div {
+  filter: grayscale(0.9) opacity(1);
+}
+.noseasonpass .project__item2 {
+  filter: grayscale(0.9) opacity(0.8);
+}
+.noseasonpass .chain{
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
 }

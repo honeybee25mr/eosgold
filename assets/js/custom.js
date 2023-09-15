@@ -320,7 +320,7 @@ let barChartData = {
             type: "line",
             fill: false,
             borderColor: "#fff",
-            borderWidth: 2,
+            borderWidth: 2, 
             pointBackgoundColor: '#68f37f',
             pointBorderColor: '#10a7ff',
             pointRadius: 5,
