@@ -5704,11 +5704,42 @@ section.min-1440 {
 .justisb {
   justify-content: space-between;
 }
-.ruinimg img {
-  width: 40%;
-  max-width: 150px;
+
+.ruinimg {
   margin-right: 1rem;
+  border: 3px double rgb(104 243 127 / 20%);
   border-radius: 0.3rem;
+  padding: 0.3rem;
+  position: relative;
+  display: flex;
+}
+.buildup {
+  position: absolute;
+  background-color: #02121D;
+  top: 0;
+  left: 50%;
+  border: 4px double rgb(104 243 127 / 50%);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50% 0;
+  transform: rotate(-45deg) translateY(-71%);
+}
+.buildup p {
+  font-size: 0.8rem;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
+  text-align: center;
+}
+.ruinimg img {
+  width: 100%;
+  max-width: 150px;
+  object-fit: contain;
+  border-radius: 0.3rem;
+  margin: auto;
+  padding-top: 1rem;
 }
 
 .equippedstatus {
@@ -5733,7 +5764,7 @@ section.min-1440 {
 .noseasonpass .chain{
   position: absolute;
   z-index: 999;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   left: 0;
   padding-right: calc(var(--bs-gutter-x) * .5);
