@@ -5975,3 +5975,7 @@ section.min-1440 {
 .tribFail h6{
   color: #68f37f;
 }
+
+.seal {
+  position: absolute;
+}
