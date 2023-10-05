@@ -42,6 +42,7 @@
 
 
     <!-- ==========Header Section Starts Here========== -->
+    <!-- 메뉴 정의는 gameplay(ruins run)에서만 하겠습니다 -->
     <header class="header-section">
         <div class="container">
             <div class="header-holder">
@@ -60,38 +61,27 @@
                         <div class="menu-area">
                             <ul class="menu">
                                 <li>
-                                    <a href="gameplay.html" class="text-primary">GamePlay</a>
-                                </li>
-                                <li>
-                                    <a href="shop.html"><i class="fa-solid fa-basket-shopping"></i></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Gacha</a>
-                                    <ul class="submenu">
-                                        <li><a href="#">Gacha1</a></li>
-                                        <li><a href="#">Gacha2</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">SHOP</a>
-                                    <ul class="submenu">
-                                        <li><a href="nfts.html">something NFTs</a></li>
-                                        <li><a href="nftOthers.html">Others</a></li>
-                                    </ul>
+                                    <a href="gameplay.html" class="text-primary">Ruins run</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">Stacking</a>
                                     <ul class="submenu">
+                                        <li><a href="#">SFT Burn</a></li>
                                         <li><a href="stacking.html">Stacking</a></li>
-                                        <li><a href="#">Farming</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">My Page</a>
                                     <ul class="submenu">
-                                        <li><a href="mypage.html">My Page</a></li>
+                                        <li><a href="#">Summary</a></li>
                                         <li><a href="myInventory.html">Inventory</a></li>
+                                        <li><a href="#">Card Setting</a></li>
+                                        <li><a href="#">Collections</a></li>
+                                        <li><a href="#">NFTs</a></li>
                                     </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.html"><i class="fa-solid fa-basket-shopping"></i></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);"><i class="fa-solid fa-globe"></i></a>
@@ -183,6 +173,7 @@
             <div class="project__wrapper">
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-12 noseasonpass">
+                        <!-- 시즌패스를 구입하지 않았을 경우 noseasonpass 클래스를 쓰고 chain이미지를 불러옵니다 -->
                         <img src="assets/images/igo/item/chain.png" class="chain" alt="">
                         <h4>Season Pass Ruin</h4>
                         <div class="project__item2 position-relative aos-init" data-aos="fade-up"
@@ -221,9 +212,9 @@
                                 <div class="width100">
                                     <div class="d-flex">
                                         <div class=" ruinimg">
-                                            <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                            <img src="assets/images/igo/item/empty.jpg" alt="">
                                             <div class="buildup">
-                                                <p class="color--theme-color">+50</p>
+                                                <p class="color--theme-color">-</p>
                                             </div>
                                         </div>
                                         <div class="d-flex flexDirection justisb width100">
@@ -231,7 +222,7 @@
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">Damage </span>x 1.0</h6>
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">in game score [16:00] </span>113,245,654</h6>
                                             </div>
-                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Inventory <i class="fa fa-arrow-right"></i></a>
+                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Card Setting <i class="fa fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>                                
@@ -285,7 +276,7 @@
                                             <div class="project__item-amount mb-2">
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">Gold status </span>1,000</h6>
                                             </div>
-                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Inventory <i class="fa fa-arrow-right"></i></a>
+                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Card Setting <i class="fa fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +330,7 @@
                                             <div class="project__item-amount mb-2">
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">Critical status </span>1,000</h6>
                                             </div>
-                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Inventory <i class="fa fa-arrow-right"></i></a>
+                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Card Setting <i class="fa fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>                             
@@ -420,7 +411,7 @@
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">Damage </span>x 1.0</h6>
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">in game score [16:00] </span>113,245,654</h6>
                                             </div>
-                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Inventory <i class="fa fa-arrow-right"></i></a>
+                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Card Setting <i class="fa fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -428,6 +419,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 seasontimeover">
+                        <!-- 시즌타임이 종료되면 seasontimeover 클래스를 추가하여 흑백으로 보이게 합니다 -->
                         <h4>Mysterious Ruin</h4>
                         <div class="project__item2 noimage position-relative aos-init" data-aos="fade-up"
                             data-aos-duration="800">
@@ -474,7 +466,7 @@
                                             <div class="project__item-amount mb-2">
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">Gold status </span>1,000</h6>
                                             </div>
-                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Inventory <i class="fa fa-arrow-right"></i></a>
+                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Card Setting <i class="fa fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>                                
@@ -528,7 +520,7 @@
                                             <div class="project__item-amount mb-2">
                                                 <h6 class="color--theme-color width100 text-center ml0"><span class="mr1">Critical status </span>1,000</h6>
                                             </div>
-                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Inventory <i class="fa fa-arrow-right"></i></a>
+                                            <a href="#" class="default-btn default-btn--secondary default-btn--small text-center">Card Setting <i class="fa fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>                                
