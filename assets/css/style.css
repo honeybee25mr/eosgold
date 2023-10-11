@@ -1797,7 +1797,7 @@ ol {
   background-color: rgba(2, 18, 29, 0.8);
   z-index: 9999;
   -webkit-transform: translateZ(9001px);
-  transform: translateZ(9001px);  
+  transform: translateZ(9001px);
 }
 .wallet-modal .modal-content {
   background-color: #0A1F2F;
@@ -1824,8 +1824,8 @@ ol {
   color: #fff;
 }
 .wallet-modal .modal-header .btn-close {
-  top: -9px;
-  right: -9px;
+  top: 1rem;
+  right: 1rem;
   background-color: #68f37f;
 }
 .wallet-modal .modal-body {
@@ -2599,7 +2599,12 @@ ol {
   background-color: #68f37f;
   color: #02121D;
 }
-
+.faq__wrapper .warning{
+  padding: 0 1.5rem;
+  list-style: disc;
+  font-size: 1rem;
+  color: #68f37f;
+}
 .accordion-item {
   padding: 1rem 1.5rem;
   background-color: #0A1F2F;
@@ -5719,6 +5724,9 @@ section.min-1440 {
 .grayicon {
   filter: grayscale(1);
 }
+.graytrans50 {
+  filter: grayscale(1) contrast(0.5) brightness(0.4);
+}
 .ruinimg {
   margin-right: 1rem;
   border: 3px double rgb(104 243 127 / 20%);
@@ -5741,8 +5749,7 @@ section.min-1440 {
   transform-origin: 50% 50% 0;
   transform: rotate(-45deg) translateY(-71%);
 }
-.buildup p {
-  font-size: 0.8rem;
+.buildup p, .buildup h6 {
   transform-origin: 50% 50%;
   transform: rotate(45deg);
   text-align: center;
@@ -5765,13 +5772,17 @@ section.min-1440 {
   max-width: 250px;
   margin: auto;
 }
-.invenimg:hover, .invenimg:active {
+.invenimg:hover {
   border: 3px double rgb(104 243 127);
   box-shadow: 1px 1px 0 3px #05D39F inset;
 }
 .invenimg.active {
+  border: 3px double #d1a653;
+  box-shadow: 1px 1px 1px 5px #d1a653 inset;
+}
+.invenimg.selected {
   border: 3px double rgb(104 243 127);
-  box-shadow: 1px 1px 1px 5px #05D39F inset;
+  box-shadow: 1px 1px 0 3px #05D39F inset;
 }
 .invenimg > .buildup {
   width: 2.5rem;
@@ -5843,11 +5854,14 @@ section.min-1440 {
 .noseasonpass .chain{
   position: absolute;
   z-index: 999;
-  top: 40%;
+  top: 45%;
   transform: translateY(-50%);
   left: 0;
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
+}
+.invenimg .chain {
+  padding: 0;
 }
 
 .vh50container {
@@ -5978,4 +5992,36 @@ section.min-1440 {
 
 .seal {
   position: absolute;
+}
+
+
+.modal-dialog {
+  position: absolute;
+  top: 20%;
+  right: 38%;
+  transform: translateX(50%)
+}
+
+.invenbtngroup {
+  gap: 20px;
+}
+.invenbtngroup a {
+  width: 35%;
+}
+.align-left {
+  text-align: left;
+}
+.modal-body ul {
+  padding: 0 1rem;
+}
+.modal-body li {
+  list-style-type: disc;
+  font-size: 1rem;
+}
+.faq__content .default-btn {
+  min-width: 40%;
+}
+
+.color--active {
+  color: #d1a653 !important;
 }
