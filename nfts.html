@@ -58,28 +58,30 @@
                         <div class="menu-area">
                             <ul class="menu">
                                 <li>
-                                    <a href="gameplay.html" class="text-primary">GamePlay</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Gacha</a>
-                                    <ul class="submenu">
-                                        <li><a href="#">Gacha1</a></li>
-                                        <li><a href="#">Gacha2</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">SHOP</a>
-                                    <ul class="submenu">
-                                        <li><a href="nfts.html">something NFTs</a></li>
-                                        <li><a href="nftOthers.html">Others</a></li>
-                                    </ul>
+                                    <a href="gameplay.html" class="text-primary">Ruins run</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">Stacking</a>
                                     <ul class="submenu">
+                                        <li><a href="#">SFT Burn</a></li>
                                         <li><a href="stacking.html">Stacking</a></li>
-                                        <li><a href="farming.html">Farming</a></li>
                                     </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">My Page</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Summary</a></li>
+                                        <li><a href="inventory.html">Inventory</a></li>
+                                        <li><a href="#">Card Setting</a></li>
+                                        <li><a href="#">Collections</a></li>
+                                        <li><a href="#">NFTs</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                                </li>
+                                <li>
+                                    <a href="luckyDraw.html"><i class="fa-solid fa-gift"></i></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);"><i class="fa-solid fa-globe"></i></a>
@@ -88,17 +90,11 @@
                                         <li><a href="#">KR</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="javascript:void(0);"><i class="fa-solid fa-user"></i></a>
-                                    <ul class="submenu">
-                                        <li><a href="mypage.html">My Page</a></li>
-                                        <li><a href="myInventory.html">Inventory</a></li>
-                                    </ul>
-                                </li>
                             </ul>
                             <a class="wallet-btn" href="#" data-bs-toggle="modal" data-bs-target="#wallet-option">
                                 <span>Connect
-                                </span> <i class="fa-solid fa-wallet"></i></a>
+                                </span> <i class="fa-solid fa-wallet"></i>
+                            </a>
 
                             <!-- toggle icons -->
                             <div class="header-bar d-lg-none">
@@ -115,203 +111,653 @@
     </header>
 
 
-    
     <section class="tabmenuRight bg--primary-color zindex99">
         <div class="container">
             <div class="section-header section-header--middle padding-top">
                 <div class="section-header__content">
                     <div class="section-header__titlebar">
-                        <p class="section-header__subtitle">NFTs</p>
-                        <h2 class="section__header__title">SHOP</h2>
+                        <h2 class="section__header__title">My NFTs</h2>
                     </div>
                 </div>
             </div>
-            <a href="nfts.html" class="default-btn default-btn--small"><span>Buy NFTs</span> <i class="fa fa-arrow-right"></i></a>
         </div>
     </section>
 
-    <!-- ==========>> Completed Project Section start Here <<========== -->
-    <section class="project padding-bottom bg--blackgraident-color">
+
+    <!-- ==========>> guild Project Section start Here <<========== -->
+    <section class="project bg--blackgraident-color padding-top inventory">
         <div class="container">
             <div class="section-header section-header--left">
-                <div class="section-header__content">
-                    <div class="section-header__titlebar">
-                        <p class="section-header__subtitle">NFT name</p>
-                        <h3 class="section__header__title">BUY NFT Packs</h3>
-                    </div>
-                </div>
-            </div>
+            </div>            
             <div class="project__wrapper">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="project__item">
-                            <div class="project__item-inner">
-                                <div class="project__item-thumb">
-                                    <img src="assets/images/igo/item/nft02.jpg" alt="IGO cover">
-                                    <!-- <span class="badge">3</span> -->
+                <div class="row mr0 ml0">
+                    <div class="col-lg-12 col-sm-12 row mr0 ml0 gy-3">
+                        <div class="faq__wrapper" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="tabDropdown mb-5">
+                                <ul class="faq__tab nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-relic-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-relic" type="button" role="tab" aria-controls="pills-relic"
+                                            aria-selected="true">Relic</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-tribute-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-tribute" type="button" role="tab" aria-controls="pills-tribute"
+                                            aria-selected="false">Tribute</button>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <select class="select">
+                                        <option class="optionItem">All</option>
+                                        <option class="optionItem">Season01</option>
+                                        <option class="optionItem">Season02</option>
+                                    </select>
                                 </div>
-                                <div class="project__item-content">
-                                    <div class="project__item-middle">
-                                        <h4>Pack name</h4>
-                                        <ul class="project__infolist">
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">NFT values</p>
-                                                <p class="project__infolist-data">3</p>
-                                            </li>
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">Price(inX)</p>
-                                                <p class="project__infolist-data">500</p>
-                                            </li>
-                                        </ul>                                        
+                            </div>                            
+                            <div class="tab-content faq__content vh50container pb-5" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-relic" role="tabpanel" aria-labelledby="pills-relic-tab">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg">
+                                                        <img src="assets/images/igo/item/odin_seal.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                        <div class="buildup">
+                                                            <p class="color--theme-color">+47</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project__item-content mt-3">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        50 / 50
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                    <p class="project__infolist-data">
+                                                                        6 / 6
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">
+                                                                        45 / 50
+                                                                    </p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg">
+                                                        <img src="assets/images/igo/item/odin_seal.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                        <div class="buildup">
+                                                            <p class="color--theme-color">+47</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project__item-content mt-3">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        50 / 50
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                    <p class="project__infolist-data">
+                                                                        6 / 6
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">
+                                                                        45 / 50
+                                                                    </p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg">
+                                                        <img src="assets/images/igo/item/odin_seal.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                        <div class="buildup">
+                                                            <p class="color--theme-color">+47</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project__item-content mt-3">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        50 / 50
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                    <p class="project__infolist-data">
+                                                                        6 / 6
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">
+                                                                        45 / 50
+                                                                    </p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg">
+                                                        <img src="assets/images/igo/item/odin_seal.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                        <div class="buildup">
+                                                            <p class="color--theme-color">+47</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project__item-content mt-3">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        50 / 50
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                    <p class="project__infolist-data">
+                                                                        6 / 6
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">
+                                                                        45 / 50
+                                                                    </p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg">
+                                                        <img src="assets/images/igo/item/odin_seal.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                        <div class="buildup">
+                                                            <p class="color--theme-color">+47</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project__item-content mt-3">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        50 / 50
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                    <p class="project__infolist-data">
+                                                                        6 / 6
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">
+                                                                        45 / 50
+                                                                    </p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg">
+                                                        <img src="assets/images/igo/item/odin_seal.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                        <div class="buildup">
+                                                            <p class="color--theme-color">+47</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project__item-content mt-3">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        50 / 50
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                    <p class="project__infolist-data">
+                                                                        6 / 6
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">
+                                                                        45 / 50
+                                                                    </p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg">
+                                                        <img src="assets/images/igo/item/odin_seal.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                        <div class="buildup">
+                                                            <p class="color--theme-color">+47</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project__item-content mt-3">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        x 1.0 (1,000)
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">
+                                                                        50 / 50
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                    <p class="project__infolist-data">
+                                                                        6 / 6
+                                                                    </p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">
+                                                                        45 / 50
+                                                                    </p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
                                     </div>
-                                    <a href="#" class="default-btn default-btn--small">BUY</a>
+                                    <ul class="pagination mt-5 justify-content-center">
+                                        <li class="page-item disabled">
+                                            <span class="page-link"><i class="fa-solid fa-angle-left"></i></span>
+                                        </li>
+                                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item">
+                                            <span class="page-link">2</span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="project__item">
-                            <div class="project__item-inner">
-                                <div class="project__item-thumb">
-                                    <img src="assets/images/igo/item/nft03.jpg" alt="IGO cover">
-                                </div>
-                                <div class="project__item-content">
-                                    <div class="project__item-middle">
-                                        <h4>Pack name</h4>
-                                        <ul class="project__infolist">
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">NFT values</p>
-                                                <p class="project__infolist-data">3</p>
-                                            </li>
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">Price(inX)</p>
-                                                <p class="project__infolist-data">500</p>
-                                            </li>
-                                        </ul>
+
+                                <div class="tab-pane fade" id="pills-tribute" role="tabpanel" aria-labelledby="pills-tribute-tab">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg sealed">
+                                                        <img src="assets/images/igo/item/chain.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/tribute_3.jpg" alt="">
+                                                    </div>
+                                                    <div class="project__item-content">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">+5</p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg sealed">
+                                                        <img src="assets/images/igo/item/chain.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/tribute_3.jpg" alt="">
+                                                    </div>
+                                                    <div class="project__item-content">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                    <p class="project__infolist-data">+1</p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-3">
+                                            <div class="project__item">
+                                                <div class="project__item-inner">
+                                                    <div class="invenimg sealed">
+                                                        <img src="assets/images/igo/item/chain.png" alt="" class="seal">
+                                                        <img src="assets/images/igo/item/tribute_2.jpg" alt="">
+                                                    </div>
+                                                    <div class="project__item-content">
+                                                        <div class="project__item-middle">
+                                                            <ul class="project__infolist">
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                    <p class="project__infolist-data">+1</p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                    <p class="project__infolist-data">+2</p>
+                                                                </li>
+                                                                <li class="project__infolist-item">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                    <p class="project__infolist-data">+3</p>
+                                                                </li>
+                                                                <li class="project__infolist-item grayicon">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                    <p class="project__infolist-data">-</p>
+                                                                </li>
+                                                                <li class="project__infolist-item grayicon">
+                                                                    <p class="project__infolist-name">
+                                                                        <span><img src="assets/images/igo/item/sicon_HPt.png"></span>HP</p>
+                                                                    <p class="project__infolist-data">-</p>
+                                                                </li>
+                                                            </ul>                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <a href="#" class="default-btn default-btn--small">BUY</a>
+                                    <ul class="pagination mt-5 justify-content-center">
+                                        <li class="page-item disabled">
+                                            <span class="page-link"><i class="fa-solid fa-angle-left"></i></span>
+                                        </li>
+                                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item">
+                                            <span class="page-link">2</span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
+                            </div>                
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="project__item">
-                            <div class="project__item-inner">
-                                <div class="project__item-thumb">
-                                    <img src="assets/images/igo/item/nft04.jpg" alt="IGO cover">
-                                </div>
-                                <div class="project__item-content">
-                                    <div class="project__item-middle">
-                                        <h4>Pack name</h4>
-                                        <ul class="project__infolist">
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">NFT values</p>
-                                                <p class="project__infolist-data">3</p>
-                                            </li>
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">Price(inX)</p>
-                                                <p class="project__infolist-data">500</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="default-btn default-btn--small">BUY</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="project__item">
-                            <div class="project__item-inner">
-                                <div class="project__item-thumb">
-                                    <img src="assets/images/igo/item/nft03.jpg" alt="IGO cover">
-                                </div>
-                                <div class="project__item-content">
-                                    <div class="project__item-middle">
-                                        <h4>Pack name</h4>
-                                        <ul class="project__infolist">
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">NFT values</p>
-                                                <p class="project__infolist-data">3</p>
-                                            </li>
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">Price(inX)</p>
-                                                <p class="project__infolist-data">500</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="default-btn default-btn--small">BUY</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="project__item">
-                            <div class="project__item-inner">
-                                <div class="project__item-thumb">
-                                    <img src="assets/images/igo/item/nft04.jpg" alt="IGO cover">
-                                </div>
-                                <div class="project__item-content">
-                                    <div class="project__item-middle">
-                                        <h4>Pack name</h4>
-                                        <ul class="project__infolist">
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">NFT values</p>
-                                                <p class="project__infolist-data">3</p>
-                                            </li>
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">Price(inX)</p>
-                                                <p class="project__infolist-data">500</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="default-btn default-btn--small">BUY</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="project__item">
-                            <div class="project__item-inner">
-                                <div class="project__item-thumb">
-                                    <img src="assets/images/igo/item/nft02.jpg" alt="IGO cover">
-                                </div>
-                                <div class="project__item-content">
-                                    <div class="project__item-middle">
-                                        <h4>Pack name</h4>
-                                        <ul class="project__infolist">
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">NFT values</p>
-                                                <p class="project__infolist-data">3</p>
-                                            </li>
-                                            <li class="project__infolist-item">
-                                                <p class="project__infolist-name">Price(inX)</p>
-                                                <p class="project__infolist-data">500</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="default-btn default-btn--small">BUY</a>
-                                </div>
-                            </div>
-                        </div>
+        
                     </div>
                 </div>
-                <ul class="pagination mt-5 justify-content-center">
-                    <li class="page-item disabled">
-                        <span class="page-link"><i class="fa-solid fa-angle-left"></i></span>
-                    </li>
-                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item">
-                        <span class="page-link">2</span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
-    <!-- ==========>> Completed Project Section Ends Here <<========== -->
+    
 
 
 
