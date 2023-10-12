@@ -5817,6 +5817,12 @@ section.min-1440 {
   font-size: 12px;
   margin: 0;
 }
+.sealed {
+  filter: brightness(0.6);
+}
+.sealed:hover {
+  filter: opacity(1);
+}
 
 .inventory .project__item {
   background-color: transparent;
@@ -5992,6 +5998,9 @@ section.min-1440 {
 
 .seal {
   position: absolute;
+}
+.seal:hover{
+  filter: opacity(0.2)
 }
 
 
