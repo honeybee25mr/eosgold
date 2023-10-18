@@ -6034,3 +6034,14 @@ section.min-1440 {
 .color--active {
   color: #d1a653 !important;
 }
+.modal .project__infolist-name img {
+  width: 40px;
+  margin-right: .5rem;
+}
+.token {
+  width: 20px;
+}
+
+.token:first-child{
+  width: 32px;
+}
