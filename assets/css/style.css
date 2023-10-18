@@ -6045,3 +6045,7 @@ section.min-1440 {
 .token:first-child{
   width: 32px;
 }
+
+.pro-details__info-item h6 {
+  margin-bottom: 0;
+}
