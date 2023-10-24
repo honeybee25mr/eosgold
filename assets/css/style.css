@@ -99,6 +99,7 @@ pre {
 */
 a {
   background-color: transparent;
+  cursor: pointer;
 }
 
 /**
@@ -1830,13 +1831,14 @@ ol {
 }
 .wallet-modal .modal-body {
   padding: 1.5rem;
+  min-width: 400px;
 }
 .wallet-modal .modal-body > p:first-child {
   font-size: 1.125rem;
 }
-.wallet-modal .modal-body a {
-  /* color: #68f37f; */
-}
+/* .wallet-modal .modal-body a {
+  color: #68f37f;
+} */
 .wallet-modal .wallet__list {
   margin-block: 30px;
 }
@@ -2027,7 +2029,7 @@ ol {
   color: #68f37f;
 }
 .pro-details__info-item {
-  background-color: rgba(40, 219, 209, 0.2);
+  background-color: rgba(40, 219, 209, 0.1);
   border-radius: 5px;
   border-radius: 5px;
 }
@@ -2467,9 +2469,9 @@ ol {
 .farming__item.selected {
   border: 1px solid rgba(104, 243, 127, 0.5);
 }
-.farming__item-header {
-  /* cursor: pointer; */
-}
+/* .farming__item-header {
+  cursor: pointer;
+} */
 @media (min-width: 992px) {
   .farming__item-header {
     display: flex;
@@ -5754,6 +5756,7 @@ section.min-1440 {
   transform: rotate(45deg);
   text-align: center;
   margin: 0;
+  font-size: .9rem;
 }
 .ruinimg img {
   width: 100%;
@@ -6048,4 +6051,26 @@ section.min-1440 {
 
 .pro-details__info-item h6 {
   margin-bottom: 0;
+}
+.changetoken {
+  margin-top: .5rem;
+  margin-bottom: 1rem !important;
+}
+.changetoken img{
+  width: 28px;
+}
+.changetoken {
+  align-items: center;
+  justify-content: center;
+}
+.changetoken span {
+  margin-left: .5rem;
+  font-size: .8rem;
+}
+.buyseasonpass {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  cursor: pointer;
 }
