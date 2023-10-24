@@ -42,7 +42,6 @@
 
 
     <!-- ==========Header Section Starts Here========== -->
-    <!-- 메뉴 정의는 gameplay(ruins run)에서만 하겠습니다 -->
     <header class="header-section">
         <div class="container">
             <div class="header-holder">
@@ -61,30 +60,31 @@
                         <div class="menu-area">
                             <ul class="menu">
                                 <li>
-                                    <a href="gameplay.html" class="text-primary">Ruins run</a>
+                                    <a href="gameplay.html" class="text-primary">Ruin's run</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">Stacking</a>
                                     <ul class="submenu">
-                                        <li><a href="#">SFT Burn</a></li>
+                                        <li><a href="burn.html">SFT Burn</a></li>
                                         <li><a href="stacking.html">Stacking</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">My Page</a>
                                     <ul class="submenu">
-                                        <li><a href="#">Summary</a></li>
+                                        <li><a href="summary.html">Summary</a></li>
                                         <li><a href="inventory.html">Inventory</a></li>
                                         <li><a href="cardSetting.html">Card Setting</a></li>
-                                        <li><a href="#">Collections</a></li>
+                                        <li><a href="guild.html">Guild</a></li>
+                                        <li><a href="collections.html">Collections</a></li>
                                         <li><a href="nfts.html">NFTs</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="shop.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                                    <a href="shop.html">Shop</a>
                                 </li>
                                 <li>
-                                    <a href="luckyDraw.html"><i class="fa-solid fa-gift"></i></a>
+                                    <a href="lucky.html"><i class="fa-solid fa-gifts"></i></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);"><i class="fa-solid fa-globe"></i></a>
@@ -95,8 +95,7 @@
                                 </li>
                             </ul>
                             <a class="wallet-btn" href="#" data-bs-toggle="modal" data-bs-target="#wallet-option">
-                                <span>Connect
-                                </span> <i class="fa-solid fa-wallet"></i>
+                                <span>Connect</span> <i class="fa-solid fa-wallet"></i>
                             </a>
 
                             <!-- toggle icons -->
@@ -112,33 +111,6 @@
             </div>
         </div>
     </header>
-
-    <!-- connect wallet modal start -->
-    <div class="wallet-modal modal fade" id="wallet-option" tabindex="-1" aria-labelledby="choose-wallet"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="choose-wallet">Connect Your Wallet</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Please select a wallet from below to connect for Launching your IGO's</p>
-                    <ul class="wallet__list">
-                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/metamask.svg"
-                                        alt="metamask">
-                                </span> </a></li>
-                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/coinbase.svg"
-                                        alt="coinbase">
-                                </span> </a></li>
-                    </ul>
-                    <p>By connecting your wallet, you agree to our <a href="#">Terms of Service</a> and our <a
-                            href="#">Privacy Policy</a> .</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- connect wallet modal end -->
 
 
 
@@ -178,7 +150,11 @@
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-12 noseasonpass">
                         <!-- 시즌패스를 구입하지 않았을 경우 noseasonpass 클래스를 쓰고 chain이미지를 불러옵니다 -->
+                        <div class="positionA buyseasonpass">
+                            <a class="default-btn" data-bs-toggle="modal" data-bs-target="#buyseasonpass">Buy Season Pass</a>
+                        </div>
                         <img src="assets/images/igo/item/chain.png" class="chain" alt="">
+                        <!-- no season pass -->
                         <h4>Season Pass Ruin</h4>
                         <div class="project__item2 position-relative aos-init" data-aos="fade-up"
                             data-aos-duration="800">
@@ -594,6 +570,62 @@
     <!-- scrollToTop start here -->
     <a href="#" class="scrollToTop zindex999"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
     <!-- scrollToTop ending here -->
+
+    
+
+    <!-- connect wallet modal start -->
+    <div class="wallet-modal modal fade" id="wallet-option" tabindex="-1" aria-labelledby="choose-wallet"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">Connect Your Wallet</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please select a wallet from below to connect for Launching your IGO's</p>
+                    <ul class="wallet__list">
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/metamask.svg"
+                                        alt="metamask">
+                                </span> </a></li>
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/coinbase.svg"
+                                        alt="coinbase">
+                                </span> </a></li>
+                    </ul>
+                    <p>By connecting your wallet, you agree to our <a href="#">Terms of Service</a> and our <a
+                            href="#">Privacy Policy</a> .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connect wallet modal end -->
+
+    
+
+    <!-- buyseasonpass modal -->
+    <div class="wallet-modal modal fade" id="buyseasonpass" tabindex="-1" aria-labelledby="choose-wallet"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">Buy Season Pass</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                    <label class="positionR mb-3">
+                        <span class="positionA">EGG</span>
+                        <input class="servervoteinput" value="564,132,864">
+                    </label>    
+                    <p>시즌패스는 10,000 EGG 입니다.<br> 구매하시겠습니까?</p>
+                    <div>
+                        <a href="#" class="default-btn default-btn--small text-center">Buy Season Pass</a>
+                        <a href="#" class="default-btn default-btn--small text-center default-btn--secondary"  class="btn-close" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- buyseasonpass modal end -->
 
 
 
