@@ -4315,17 +4315,27 @@ span.positionA{
 }
 .project__item2 {
   background-color: rgba(0,0,0,0.35);
-  background: url(../images/blog/01.jpg);
-  background-size: cover;
   backdrop-filter: blur(5px);
   border-radius: 5px;
   border: 1px solid transparent;
 }
 .project__item2.noimage {
   background-image: none;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  
+  border: 1px solid rgba(255, 255, 255, 0.2); 
 }
+.project__item2.back01 {
+  background: url(../images/blog/damage.jpg);
+  background-size: cover;
+}
+.project__item2.back02 {
+  background: url(../images/blog/gold.jpg);
+  background-size: cover;
+}
+.project__item2.back03 {
+  background: url(../images/blog/critical.jpg);
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
   .project__item2 {
     padding: 20px;
@@ -6073,4 +6083,68 @@ section.min-1440 {
   transform: translate(-50%, -50%);
   z-index: 9999;
   cursor: pointer;
+}
+.luckyDraw video {
+  width: 100%;
+}
+.luckybtn {
+  left: 50%;
+  bottom: 3rem;
+  transform: translateX(-50%);
+  display: flex;
+}
+.luckybtn a{
+  margin: 0 .5rem;
+  min-width: 250px;
+  text-align: center;
+}
+.rotatey180 {
+  transform: rotateY(180deg);
+}
+.grace_title {
+  background: url(../images/blog/graceBack.png);
+  background-size: cover;
+  border-radius: .5rem;
+  min-height: 150px;
+  border: 1px solid #05D39F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.grace_title h3 {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0px 0px 3px rgba(104,243,127,0.9);
+}
+.grace_title h3 span{
+  margin-bottom: .5rem;
+}
+.grace_title h3 span img{
+  height: 2rem;
+}
+.luckyinput {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.luckyinput img {
+  width: 36px;
+  margin-right: .5rem;
+}
+.luckyinput .pointNo{
+  background: rgba(0, 0, 0, 0.7);
+  color: #68f37f;
+  font-family: 'Roboto Slab',  'Noto Sans KR',sans-serif;
+  padding: .7rem .7rem;
+  margin: 0 .125rem;
+  border: none;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.luckyinput h6 {
+  font-size: 1.5rem;
 }
