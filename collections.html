@@ -142,12 +142,63 @@
             </div>            
             <div class="project__wrapper">
                 <div class="row mr0 ml0">                    
-                    <div class="col-lg-4 col-sm-12 row mr0 ml0 borderlight">
+                    <div class="col-lg-4 col-sm-12 row mr0 ml0 borderlight collection">
+                        <!-- 비어있을 때 -->
                         <div class="col-lg-12 col-sm-12">
                             <div class="project__item">
                                 <div class="project__item-inner">
                                     <div class="invenimg">
-                                        <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                        <img src="assets/images/igo/item/empty.jpg" alt="">
+                                        <div class="buildup">
+                                            <p class="color--theme-color">-</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__item-content">
+                                        <div class="project__item-middle">
+                                            <ul class="project__infolist">
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                    <p class="project__infolist-data color--white-color">
+                                                        0
+                                                    </p>
+                                                </li>
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                    <p class="project__infolist-data color--white-color">
+                                                        0
+                                                    </p>
+                                                </li>
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                    <p class="project__infolist-data color--white-color">
+                                                        0
+                                                    </p>
+                                                </li>
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                    <p class="project__infolist-data color--white-color">
+                                                        0
+                                                    </p>
+                                                </li>
+                                            </ul>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                <a href="#" class="default-btn text-center" data-bs-toggle="modal" data-bs-target="#collectionRegister">Register</a>
+                            </div>
+                        </div>
+                        <!-- 채웠을 때 -->
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="project__item">
+                                <div class="project__item-inner">
+                                    <div class="invenimg">
+                                        <img src="assets/images/igo/item/odin3.jpg" alt="">
                                         <div class="buildup">
                                             <p class="color--theme-color">+47</p>
                                         </div>
@@ -158,33 +209,29 @@
                                                 <li class="project__infolist-item">
                                                     <p class="project__infolist-name">
                                                         <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
-                                                    <p class="project__infolist-data color--white-color">
-                                                        <span class="color--theme-color">x 1.0 (1,000) <i class="fa fa-arrow-right"></i> </span>
-                                                        x 4.1 (205)
+                                                    <p class="project__infolist-data">
+                                                        + 4.1 (205)
                                                     </p>
                                                 </li>
                                                 <li class="project__infolist-item">
                                                     <p class="project__infolist-name">
                                                         <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
-                                                    <p class="project__infolist-data color--white-color">
-                                                        <span class="color--theme-color">x 1.0 (1,000) <i class="fa fa-arrow-right"></i> </span>
-                                                        x 4.1 (205)
+                                                    <p class="project__infolist-data">
+                                                        + 5.1 (320)
                                                     </p>
                                                 </li>
                                                 <li class="project__infolist-item">
                                                     <p class="project__infolist-name">
                                                         <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
-                                                    <p class="project__infolist-data color--white-color">
-                                                        <span class="color--theme-color">x 1.0 (1,000) <i class="fa fa-arrow-right"></i> </span>
-                                                        x 4.1 (205)
+                                                    <p class="project__infolist-data">
+                                                        + 3.1 (180)
                                                     </p>
                                                 </li>
                                                 <li class="project__infolist-item">
                                                     <p class="project__infolist-name">
                                                         <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
-                                                    <p class="project__infolist-data color--white-color">
-                                                        <span class="color--theme-color">x 1.0 (1,000) <i class="fa fa-arrow-right"></i> </span>
-                                                        x 4.1 (205)
+                                                    <p class="project__infolist-data">
+                                                        + 4.1 (205)
                                                     </p>
                                                 </li>
                                             </ul>                                        
@@ -196,8 +243,80 @@
                                 <a href="#" class="default-btn text-center">500 Unregister</a>
                             </div>
                         </div>
+                        <!-- 비교할 때 -->
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="project__item">
+                                <div class="project__item-inner">
+                                    <div class="collectionCard">
+                                        <div class="invenimg compare">
+                                            <img src="assets/images/igo/item/odin3.jpg" alt="">
+                                            <div class="buildup">
+                                                <p class="color--theme-color">+47</p>
+                                            </div>
+                                        </div>
+                                        <div><i class="fa fa-arrow-right"></i></div>
+                                        <div class="invenimg">
+                                            <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                            <div class="buildup">
+                                                <p class="color--theme-color">+47</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project__item-content">
+                                        <div class="project__item-middle">
+                                            <ul class="project__infolist">
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                    <p class="project__infolist-data">
+                                                        <span class="color--theme-color">+ 4.1 <i class="fa fa-arrow-right"></i> </span>
+                                                        + 4.1 (205)
+                                                    </p>
+                                                </li>
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                    <p class="project__infolist-data color--up">
+                                                        <span class="color--theme-color">+ 4.1 <i class="fa fa-arrow-right"></i> </span>
+                                                        + 5.1 (320)
+                                                    </p>
+                                                </li>
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                    <p class="project__infolist-data color--down">
+                                                        <span class="color--theme-color">+ 4.1 <i class="fa fa-arrow-right"></i> </span>
+                                                        + 3.1 (180)
+                                                    </p>
+                                                </li>
+                                                <li class="project__infolist-item">
+                                                    <p class="project__infolist-name">
+                                                        <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                    <p class="project__infolist-data">
+                                                        <span class="color--theme-color">+ 4.1 <i class="fa fa-arrow-right"></i> </span>
+                                                        + 4.1 (205)
+                                                    </p>
+                                                </li>
+                                            </ul>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                <a href="#" class="default-btn text-center">500 Change</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info">
+                            <ul class="align-left">
+                                <li>컬렉션 등록을 통해 보너스 부스트를 획득 할 수 있습니다.</li>
+                                <li>컬렉션 등록에 사용된 Relic Card는 변경 및 해제 할 수 있으며, EGG가 소모됩니다.</li>                                        
+                                <li>시즌 별 Relic Card에 따라 획득 할 수 있는 보너스 부스트의 종류가 다릅니다.</li>                                        
+                                <li>Relic Card의 강화 수치가 높을수록 더 많은 보너스 부스트를 획득 할 수 있습니다.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-8 col-sm-12 row mr0 ml0 gy-3">
+                    <div class="col-lg-8 col-sm-12 row mr0 ml0 gy-3 collection">
                         <div class="faq__wrapper" data-aos="fade-up" data-aos-duration="1000">
                             <div class="d-flex justify-content-lg-end mb-5">
                                 <select class="select">
@@ -216,12 +335,7 @@
                                                         <div class="buildup">
                                                             <p class="color--theme-color">+47</p>
                                                         </div>
-                                                        <div class="HPSeal">
-                                                            <div class="heart">
-                                                                <p>45</p>
-                                                            </div>
-                                                            <img src="assets/images/igo/item/sicon_seal1.png" alt="">                                            
-                                                        </div>
+                                                        <div class="Sout">out of season</div>
                                                     </div>
                                                     <div class="project__item-content">
                                                         <div class="project__item-middle">
@@ -245,11 +359,6 @@
                                                                     <p class="project__infolist-name">
                                                                         <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
                                                                     <p class="project__infolist-data">x 1.0</p>
-                                                                </li>
-                                                                <li class="project__infolist-item">
-                                                                    <p class="project__infolist-name">
-                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
-                                                                    <p class="project__infolist-data">0 / 50</p>
                                                                 </li>
                                                             </ul>                                        
                                                         </div>
@@ -260,17 +369,12 @@
                                         <div class="col-lg-3 col-md-6 col-sm-12">
                                             <div class="project__item">
                                                 <div class="project__item-inner">
-                                                    <div class="invenimg">
+                                                    <div class="invenimg ">
                                                         <img src="assets/images/igo/item/odin7.jpg" alt="">
                                                         <div class="buildup">
                                                             <p class="color--theme-color">+03</p>
                                                         </div>
-                                                        <div class="HPSeal">
-                                                            <div class="heart">
-                                                                <p>45</p>
-                                                            </div>
-                                                            <img src="assets/images/igo/item/sicon_seal5.png" alt="">                                            
-                                                        </div>
+                                                        <div class="Sout">out of season</div>
                                                     </div>
                                                     <div class="project__item-content">
                                                         <div class="project__item-middle">
@@ -294,11 +398,6 @@
                                                                     <p class="project__infolist-name">
                                                                         <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
                                                                     <p class="project__infolist-data">x 1.0</p>
-                                                                </li>
-                                                                <li class="project__infolist-item">
-                                                                    <p class="project__infolist-name">
-                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
-                                                                    <p class="project__infolist-data">0 / 50</p>
                                                                 </li>
                                                             </ul>                                        
                                                         </div>
@@ -309,17 +408,12 @@
                                         <div class="col-lg-3 col-md-6 col-sm-12">
                                             <div class="project__item">
                                                 <div class="project__item-inner">
-                                                    <div class="invenimg">
+                                                    <div class="invenimg ">
                                                         <img src="assets/images/igo/item/odin7.jpg" alt="">
                                                         <div class="buildup">
                                                             <p class="color--theme-color">+03</p>
                                                         </div>
-                                                        <div class="HPSeal">
-                                                            <div class="heart">
-                                                                <p>45</p>
-                                                            </div>
-                                                            <img src="assets/images/igo/item/sicon_seal3.png" alt="">                                            
-                                                        </div>
+                                                        <div class="Sout">out of season</div>
                                                     </div>
                                                     <div class="project__item-content">
                                                         <div class="project__item-middle">
@@ -343,11 +437,6 @@
                                                                     <p class="project__infolist-name">
                                                                         <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
                                                                     <p class="project__infolist-data">x 1.0</p>
-                                                                </li>
-                                                                <li class="project__infolist-item">
-                                                                    <p class="project__infolist-name">
-                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
-                                                                    <p class="project__infolist-data">0 / 50</p>
                                                                 </li>
                                                             </ul>                                        
                                                         </div>
@@ -358,17 +447,12 @@
                                         <div class="col-lg-3 col-md-6 col-sm-12">
                                             <div class="project__item">
                                                 <div class="project__item-inner">
-                                                    <div class="invenimg">
+                                                    <div class="invenimg ">
                                                         <img src="assets/images/igo/item/odin7.jpg" alt="">
                                                         <div class="buildup">
                                                             <p class="color--theme-color">+03</p>
                                                         </div>
-                                                        <div class="HPSeal">
-                                                            <div class="heart">
-                                                                <p>45</p>
-                                                            </div>
-                                                            <img src="assets/images/igo/item/sicon_seal2.png" alt="">                                            
-                                                        </div>
+                                                        <div class="Sout">out of season</div>
                                                     </div>
                                                     <div class="project__item-content">
                                                         <div class="project__item-middle">
@@ -392,11 +476,6 @@
                                                                     <p class="project__infolist-name">
                                                                         <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
                                                                     <p class="project__infolist-data">x 1.0</p>
-                                                                </li>
-                                                                <li class="project__infolist-item">
-                                                                    <p class="project__infolist-name">
-                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
-                                                                    <p class="project__infolist-data">0 / 50</p>
                                                                 </li>
                                                             </ul>                                        
                                                         </div>
@@ -407,17 +486,12 @@
                                         <div class="col-lg-3 col-md-6 col-sm-12">
                                             <div class="project__item">
                                                 <div class="project__item-inner">
-                                                    <div class="invenimg">
+                                                    <div class="invenimg ">
                                                         <img src="assets/images/igo/item/odin7.jpg" alt="">
                                                         <div class="buildup">
                                                             <p class="color--theme-color">+03</p>
                                                         </div>
-                                                        <div class="HPSeal">
-                                                            <div class="heart">
-                                                                <p>45</p>
-                                                            </div>
-                                                            <img src="assets/images/igo/item/sicon_seal0.png" alt="">                                            
-                                                        </div>
+                                                        <div class="Sout">out of season</div>
                                                     </div>
                                                     <div class="project__item-content">
                                                         <div class="project__item-middle">
@@ -441,11 +515,6 @@
                                                                     <p class="project__infolist-name">
                                                                         <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
                                                                     <p class="project__infolist-data">x 1.0</p>
-                                                                </li>
-                                                                <li class="project__infolist-item">
-                                                                    <p class="project__infolist-name">
-                                                                        <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
-                                                                    <p class="project__infolist-data">0 / 50</p>
                                                                 </li>
                                                             </ul>                                        
                                                         </div>
@@ -511,6 +580,31 @@
     </footer>
     <!-- ================> Footer section end here <================== -->
 
+    <!-- modal -->
+    
+    <!-- #collectionRegister -->
+    <div class="wallet-modal modal fade" id="collectionRegister" tabindex="-1" aria-labelledby="choose-wallet" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">Changing Collection</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="align-left">
+                        <li>The relic card currently registered in your collection is from a concluded season. Changing it with the selected relic card will deactivate the previously registered card and restore it to your inventory. This process requires 500 EGG. Do you want to proceed with changing the collection?
+                        </li>
+                        <li class="color--theme-color">We do not compensate for damages resulting from individual errors.</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="#" class="default-btn text-center mr2">Confirm</a>
+                        <a href="#" class="default-btn text-center">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #collectionRegister -->
 
 
     <!-- scrollToTop start here -->
