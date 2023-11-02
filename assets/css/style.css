@@ -5760,6 +5760,15 @@ section.min-1440 {
   position: relative;
   display: flex;
 }
+.Sout {
+  position: absolute;
+  bottom: 5px;
+  right: 0.5rem;
+  font-size: .9rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #999;
+  padding: 0 5px;
+}
 .buildup {
   position: absolute;
   background-color: #02121D;
@@ -6060,6 +6069,21 @@ section.min-1440 {
 .color--active {
   color: #d1a653 !important;
 }
+.color--up {
+  color: #68f37f !important;
+}
+.color--down {
+  color: #ff098e !important;
+}
+.color--collection {
+  color: #d1a653;
+}
+.collection p {
+  color: #d1a653;
+}
+.collection .project__infolist-name {
+  color: #fff;
+}
 .modal .project__infolist-name img {
   width: 40px;
   margin-right: .5rem;
@@ -6313,4 +6337,32 @@ section.min-1440 {
   display: flex;
   align-items: center;
   justify-content: center;  
+}
+.collection .invenimg img {
+  filter: saturate(0.4);
+}
+
+.collection .invenimg img:hover {
+  filter: saturate(1);
+}
+
+.collectionCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #68f37f;
+}
+
+.collectionCard .compare {
+  width: 30%;
+  min-width: 100px;
+}
+
+.info {
+  margin: 1rem;
+  padding-left: 2rem;
+  font-size: .95rem;
+}
+.info ul li {
+  list-style: disc;
 }
