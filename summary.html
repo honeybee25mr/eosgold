@@ -24,6 +24,9 @@
 
     <!-- main css for template -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 
 <body class="bg--primary-color">
@@ -118,20 +121,613 @@
             <div class="section-header section-header--middle padding-top">
                 <div class="section-header__content">
                     <div class="section-header__titlebar">
-                        <h2 class="section__header__title">SUMMARY</h2>
+                        <h2 class="section__header__title">Account Summary</h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==========>> Completed Project Section start Here <<========== -->
-    <section class="project padding-top padding-bottom bg--blackgraident-color">
-        <div class="padding-top padding-bottom"></div>
-        <div class="padding-top padding-bottom"></div>
+    <section class="bg--primary-color">
+        <div class="container mb-5">
+            <div class="farming__wrapper">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <div class="farming__item">
+                            <div class="farming__item-header">
+                                <div class="farming__content">                                
+                                    <div class="pro-details__info">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="pro-details__info-item d-flex justify-content-between align-items-center">
+                                                    <h6>
+                                                        <img src="assets/images/token/EGT.png" class="token">
+                                                        EGT
+                                                    </h6>
+                                                    <p class="pro-details__info-value">
+                                                        1,000,000
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="pro-details__info-item d-flex justify-content-between align-items-center">
+                                                    <h6>
+                                                        <img src="assets/images/token/EGG.png" class="token">
+                                                        EGG
+                                                    </h6>
+                                                    <p class="pro-details__info-value">
+                                                        1,000,000
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="pro-details__info-item d-flex justify-content-between align-items-center">
+                                                    <h6>
+                                                        <img src="assets/images/token/SFT.png" class="token">
+                                                        SFT
+                                                    </h6>
+                                                    <p class="pro-details__info-value">
+                                                        1,000,000
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- ==========>> Completed Project Section Ends Here <<========== -->
 
+
+
+    <!-- ================> my info start here <================== -->
+    <section class="bg--primary-color">
+        <div class="farming">
+            <div class="container">
+                <div class="farming__wrapper">              
+                    <div class="section-header">
+                        <div class="section-header__content">
+                            <div class="section-header__titlebar">
+                                <h3 class="section__header__title">Equipped Character</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <div class="farming__item">
+                                <div class="farming__item-header">
+                                    <div class="farming__thumb">
+                                        <img src="assets/images/igo/item/001.jpg" alt="myCharacter">
+                                    </div>
+                                    <div class="farming__content">                                
+                                        <div class="pro-details__info">
+                                            <div class="row g-3">                                        
+                                                <div class="pro-details__item-content">
+                                                    <h4 class="pro-details__info-name">Combat Point</h4>
+                                                    <h3>2,564,987,132</h4>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Normal Damage
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            1,000,000
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Critical Damage
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            1,654,987
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned Gold
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            1,300,000
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="pro-details__info-item">
+                                                        <h6 class="pro-details__info-name">
+                                                            Earned EXP
+                                                        </h6>
+                                                        <p class="pro-details__info-value">
+                                                            5,456,732
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="farming__wrapper padding-top40">                
+                    <div class="section-header">
+                        <div class="section-header__content">
+                            <div class="section-header__titlebar">
+                                <h3 class="section__header__title">Card Settings</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="farming__item cardSettings">
+                        <div class="farming__item-header">                            
+                            <div class="project__wrapper width100">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-12">
+                                        <h4 class="mb-5">Season Pass Ruin</h4>
+                                        <div class="position-relative aos-init" data-aos="fade-up" data-aos-duration="400">
+                                            <div class="project__item2-inner">
+                                                <div class="width100">
+                                                    <div class="d-flex">
+                                                        <div class="ruinimg">
+                                                            <img src="assets/images/igo/item/empty.jpg" alt="">
+                                                            <div class="buildup">
+                                                                <!-- <p class="color--theme-color">+7</p> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flexDirection justisb width100">
+                                                            <div class="project__item-content">
+                                                                <p class="color--theme-color">NO SEASON PASS</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <h4 class="mb-5">Mysterious Ruin</h4>
+                                        <div class="position-relative aos-init" data-aos="fade-up" data-aos-duration="800">
+                                            <div class="project__item2-inner">
+                                                <div class="width100">
+                                                    <div class="d-flex">
+                                                        <div class=" ruinimg">
+                                                            <img src="assets/images/igo/item/odin3.jpg" alt="">
+                                                            <div class="buildup">
+                                                                <p class="color--theme-color">+12</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flexDirection justisb width100">
+                                                            <div class="project__item-content">
+                                                                <div class="project__item-middle">
+                                                                    <ul class="project__infolist">
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">0 / 50
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">0 / 50
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">0 / 50
+                                                                            </p>
+                                                                        </li>
+                                                                    </ul>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <h4 class="mb-5">Forgotten Ruin</h4>
+                                        <div class="position-relative aos-init" data-aos="fade-up" data-aos-duration="1200">
+                                            <div class="project__item2-inner">
+                                                <div class="width100">
+                                                    <div class="d-flex">
+                                                        <div class=" ruinimg">
+                                                            <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                                            <div class="buildup">
+                                                                <p class="color--theme-color">+47</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flexDirection justisb width100">
+                                                            <div class="project__item-content">
+                                                                <div class="project__item-middle">
+                                                                    <ul class="project__infolist">
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">x 1.0 (1,000)
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_HP.png"></span>HP</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">0 / 50
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_seal6.png"></span>Seal</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">0 / 50
+                                                                            </p>
+                                                                        </li>
+                                                                        <li class="project__infolist-item">
+                                                                            <p class="project__infolist-name">
+                                                                                <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                                            <p class="project__infolist-data color--white-color">
+                                                                                <span class="color--theme-color">0 / 50
+                                                                            </p>
+                                                                        </li>
+                                                                    </ul>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 콜렉션 보너스 : 시즌1에서는 표기 안함 -->
+                <div class="farming__wrapper padding-top40">
+                    <div class="section-header">
+                        <div class="section-header__content">
+                            <div class="section-header__titlebar">
+                                <h3 class="section__header__title">Collection Bonus</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-borderless leaderboard__table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Card</th>
+                                    <th scope="col">Season</th>
+                                    <th scope="col">Damage</th>
+                                    <th scope="col">Critical</th>
+                                    <th scope="col">Gold</th>
+                                    <th scope="col">EXP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="leaderboard__item">
+                                    <td><img src="assets/images/igo/item/odin7.jpg"></td>
+                                    <td>Season01. Odin</td>
+                                    <td>+ 8.2 (320)</td>
+                                    <td>+ 4.1 (160)</td>
+                                    <td>+ 5.4 (240)</td>
+                                    <td>+ 2.7 (120)</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr class="leaderboard__item color--theme-color tableborder">
+                                    <th colspan="2">Total Bonus</th>
+                                    <th>+ 8.2 (320)</th>
+                                    <th>+ 4.1 (160)</th>
+                                    <th>+ 5.4 (240)</th>
+                                    <th>+ 2.7 (120)</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================> my info end here <================== -->
+
+
+
+    
+    <section class="project padding-top padding-bottom project--completed2 bg--blackgraident-color">
+        <div class="container boxcontainer">
+            <div class="section-header section-header--left">
+                <div class="section-header__content">
+                    <div class="section-header__titlebar">
+                        <h3 class="section__header__title">Earned Token Info</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="project__wrapper"> 
+                <div class="farming__item-content">
+                    <div class="row g-5">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="farming__deposit">
+                                <div class="farming__deposit-field d-flex">
+                                    <h6 class="form-label mr1">2023-11-21</h6>
+                                    <p class="badge moving">yesterday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 noimage position-relative aos-init" data-aos="fade-up"
+                            data-aos-duration="800">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Season Pass Ruin</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Score</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">NO SEASONPASS</h6>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 noimage position-relative aos-init" data-aos="fade-up"
+                            data-aos-duration="800">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Mysterious Ruin</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Score</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">245,645</h6>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 noimage position-relative aos-init" data-aos="fade-up"
+                            data-aos-duration="800">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Forgotten Ruin</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Score</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">95,645</h6>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="farming__item">
+                        <div class="farming__item-header">
+                            <div class="farming__content">                                
+                                <div class="pro-details__info">
+                                    <div class="row g-3">
+                                        <div class="col-md-12 col-sm-12 totalearn d-flex flex-md-row flex-sm-column align-items-center justify-content-sm-center">
+                                            <div class="pro-details__info-item text-center">
+                                                <h6 class="pro-details__info-name">
+                                                    Character Earned
+                                                </h6>
+                                                <h4 class="pro-details__info-value">NO SEASONPASS</h4>
+                                            </div>
+                                            <p class="mb-0">+</p>
+                                            <div class="pro-details__info-item text-center">
+                                                <h6 class="pro-details__info-name">
+                                                    Character Earned
+                                                </h6>
+                                                <h4 class="pro-details__info-value">45,645</h4>
+                                            </div>
+                                            <p class="mb-0">+</p>
+                                            <div class="pro-details__info-item text-center">
+                                                <h6 class="pro-details__info-name">
+                                                    Character Earned
+                                                </h6>
+                                                <h4 class="pro-details__info-value">95,645</h4>
+                                            </div>
+                                            <p class="mb-0">=</p>
+                                            <div class="pro-details__info-item text-center">
+                                                <h4 class="pro-details__info-name">Total Earned</h4>
+                                                <h3>2,564,987,132</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="project bg--black-color padding-bottom">
+        <div class="container">
+            <div class="section-header section-header--left">
+                <div class="section-header__content">
+                    <div class="section-header__titlebar">
+                        <h3 class="section__header__title">Token Earned</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <select class="form-select" id="status-select">
+                        <option selected>2023-10</option>
+                        <option>2023-09</option>
+                        <option>2023-08</option>
+                        <option>2023-07</option>
+                    </select>
+                </div>
+            </div>
+            <div style="width: 100%; height: 450px;">
+                <canvas id="line-chart"></canvas>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="project bg--black-color summary">
+        <div class="container">
+            <div class="farming__wrapper padding-top40">
+                <div class="section-header">
+                    <div class="section-header__content">
+                        <div class="section-header__titlebar">
+                            <h3 class="section__header__title">Token Usage History</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-end">
+                    <div class="form-floating mr1">
+                        <select class="form-select" id="status-select">
+                            <option selected>Token All</option>
+                            <option>EGG</option>
+                            <option>SFT</option>
+                        </select>
+                    </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="status-select">
+                            <option selected>2023-10</option>
+                            <option>2023-09</option>
+                            <option>2023-08</option>
+                            <option>2024-07</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-borderless leaderboard__table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Token</th>
+                                <th scope="col">Content</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="leaderboard__item">
+                                <td>123-10-25</td>
+                                <td><div class="leaderboard--level-up">+14,528</div></td>
+                                <td><img src="assets/images/token/EGG.png" class="token"> EGG</td>
+                                <td>Card Synthetic</td>
+                            </tr>
+                            <tr class="leaderboard__item">
+                                <td>123-10-24</td>
+                                <td><div>-253</div></td>
+                                <td><img src="assets/images/token/EGG.png" class="token"> EGG</td>
+                                <td>Card Synthetic</td>
+                            </tr>
+                            <tr class="leaderboard__item">
+                                <td>123-10-22</td>
+                                <td><div>-86</div></td>
+                                <td><img src="assets/images/token/SFT.png" class="token"> SFT</td>
+                                <td>Card Synthetic</td>
+                            </tr>
+                            <tr class="leaderboard__item">
+                                <td>123-10-20</td>
+                                <td><div>-4,423</div></td>
+                                <td><img src="assets/images/token/SFT.png" class="token"> SFT</td>
+                                <td>Card Synthetic</td>
+                            </tr>
+                            <tr class="leaderboard__item">
+                                <td>123-10-20</td>
+                                <td><div>-72</div></td>
+                                <td><img src="assets/images/token/EGG.png" class="token"> EGG</td>
+                                <td>Card Synthetic</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ================> Footer section start here <================== -->
@@ -194,6 +790,59 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/purecounter.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        new Chart(document.getElementById("line-chart"), {
+            type : 'line',
+            data : {
+                labels : [ '10/01', '10/02', '10/03', '10/04', '10/05', '10/06', '10/07', '10/08', '10/09', '10/10', ],
+                datasets : [
+                        {
+                            data : [ 186, 205, 1321, 1516, 2107,
+                                    2191, 3133, 3221, 4783, 5478 ],
+                            label : "Token",
+                            borderColor : "#68f37f",
+                            fill : false
+                        }]
+            },
+            options : {
+                title : {
+                    display : false,
+                },
+                legend : {
+                    display : false
+                },
+                maintainAspectRatio: false,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,    
+                },scales: {
+                    barPercentage: 0.5,
+                    xAxes: [{
+                        categoryPercentage: 0.5,
+                        ticks: {
+                            fontColor: '#fff',
+                            fontSize: 14,
+                            fontFamily: 'Poppins'
+                        },
+                        gridLines: {
+                            color: '#68f37f',
+                            paddingBottom: 10,
+                            drawOnChartArea: false,
+                        }
+                    }],
+                    yAxes: [{
+                        id: 'bar',
+                        ticks: {
+                            fontColor: '#fff',
+                            fontSize: 14,
+                            fontFamily: 'Poppins'
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
