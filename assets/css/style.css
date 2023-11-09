@@ -856,6 +856,9 @@ a {
   color: #68f37f !important;
   font-weight: bold;
 }
+.color--disable-color {
+  color: #ddd;
+}
 .bg--theme-color {
   background-color: #68f37f;
 }
@@ -1246,6 +1249,9 @@ ol {
   .header-top-area .social-icons li:last-child::after {
     display: none;
   }
+  .justify-content-sm-center {
+    justify-content: center;
+  }
 }
 .header-top-area .social-icons li a {
   height: 50px;
@@ -1526,12 +1532,12 @@ ol {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
   }
-  .menu li a:hover {
+  .menu li.open > a {
     background: rgba(104, 243, 127, 0.6);
   }
   .menu li .submenu {
     padding-left: 20px;
-    display: none;
+    /* display: none; */
   }
   .menu li .submenu li {
     width: 100%;
@@ -1546,6 +1552,27 @@ ol {
     -ms-transform: scaleY(1);
     transform: scaleY(1);
   }
+  .open.menu-item-has-children > a::after {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    content: '-';
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu-item-has-children > a::after {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    content: '+';
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 }
 
 .header-bar {
@@ -1594,7 +1621,7 @@ ol {
 .menu-item-has-children > a.active::after, .menu-item-has-children > a.active::before {
   background-color: #fff !important;
 }
-.menu-item-has-children > a::after {
+/* .menu-item-has-children > a::after {
   top: 50%;
   transform: translateY(-50%);
   right: 25px;
@@ -1614,7 +1641,7 @@ ol {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
+} */
 @media (min-width: 992px) {
   .menu-item-has-children > a::after {
     position: absolute;
@@ -5311,10 +5338,6 @@ span.positionA{
 
 
 
-
-
-
-
 /* interactive */
 
 section.mainPage {
@@ -5337,7 +5360,7 @@ section.mainPage .container{
 section.mainPage .logo_big {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
@@ -5754,6 +5777,7 @@ section.min-1440 {
 }
 .ruinimg {
   margin-right: 1rem;
+  margin-bottom: auto;
   border: 3px double rgb(104 243 127 / 20%);
   border-radius: 0.3rem;
   padding: 0.3rem;
@@ -6068,6 +6092,7 @@ section.min-1440 {
 
 .color--active {
   color: #d1a653 !important;
+  font-weight: bold;
 }
 .color--up {
   color: #68f37f !important;
@@ -6142,10 +6167,11 @@ section.min-1440 {
   transform: rotateY(180deg);
 }
 .grace_title {
-  background: url(../images/blog/graceBack.png);
+  background: url(../images/blog/jackpot03.gif);
   background-size: cover;
+  background-position: center;
   border-radius: .5rem;
-  min-height: 150px;
+  min-height: 200px;
   border: 1px solid #05D39F;
   display: flex;
   align-items: center;
@@ -6284,8 +6310,7 @@ section.min-1440 {
   width: 150px;
 }
 .limitedBar {
-  padding-top: 1rem;
-  padding-bottom: 5rem;
+  padding: 1rem 0;
 }
 .mySFT, .drawtimeleft {
   padding: 10px 1.5rem;
@@ -6293,6 +6318,9 @@ section.min-1440 {
 }
 .mySFT {
   background-color: rgba(40, 219, 209, 0.1);
+  width: auto;
+  min-width: 300px;
+  text-align: right;
 }
 .limitedBar h6 {
   margin: 0;
@@ -6327,11 +6355,11 @@ section.min-1440 {
   background-color: transparent;
 }
 .offerhover {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   right: 10px;
   bottom: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   display: flex;
@@ -6360,9 +6388,37 @@ section.min-1440 {
 
 .info {
   margin: 1rem;
-  padding-left: 2rem;
+  padding: 0 2rem;
   font-size: .95rem;
 }
 .info ul li {
   list-style: disc;
+}
+
+.cardSettings .project__item-content {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.farming__wrapper .table img {
+  width: 100px;
+  border: 1px solid #05D39F;
+  border-radius: 5px;
+}
+
+.summary .table img {
+  border: none;
+  width: 24px;
+  margin-right: .5rem;
+}
+
+@media (max-width: 576px){
+  .flex-sm-column {
+      flex-direction: column!important;
+  }
+}
+
+.tableborder th {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
