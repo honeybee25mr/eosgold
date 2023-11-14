@@ -6146,7 +6146,7 @@ section.min-1440 {
   z-index: 9999;
   cursor: pointer;
 }
-.luckyDraw video {
+.luckyDraw img {
   width: 100%;
 }
 .luckybtn {
@@ -6368,6 +6368,9 @@ section.min-1440 {
 }
 .collection .invenimg img {
   filter: saturate(0.4);
+}
+.collection .invenimg.currentseason img {
+  filter: saturate(1);
 }
 
 .collection .invenimg img:hover {
