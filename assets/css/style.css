@@ -6146,7 +6146,7 @@ section.min-1440 {
   z-index: 9999;
   cursor: pointer;
 }
-.luckyDraw img {
+.luckyDraw.scene img {
   width: 100%;
 }
 .luckybtn {
