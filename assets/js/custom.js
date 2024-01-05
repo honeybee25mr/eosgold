@@ -308,7 +308,7 @@ $(function(){
 
 
 //serverRanking
-let labels = [ 'Limen','Eldir','Surt','Broken','Terna','Rebens','Norde', 'Muspel', 'Chronos'];
+var labels = [ 'Limen','Eldir','Surt','Broken','Terna','Rebens','Norde', 'Muspel', 'Chronos'];
 let barChartData = {
     labels: labels,
     datasets: [
@@ -344,13 +344,7 @@ window.onload = function () {
         options: {
             maintainAspectRatio: false,
             tooltips: {
-                mode: 'index',
-                intersect: false,
-                // callbacks: {
-                //     label: function(tooltipItem) {
-                //         return + Number(tooltipItem.yLabel) + "%";
-                //     }
-                // }                
+                mode: 'index',           
             },
             fontColor: '#fff',
             legend: 'right',
@@ -374,19 +368,6 @@ window.onload = function () {
                     }
                 }],
                 yAxes: [{
-                    id: 'bar',
-                    stacked: true,
-                    display: false,
-                    position: "left",
-                    id: "bar",
-                    ticks: {
-                    beginAtZero: true,
-                    suggestedMin: 0,
-                    suggestedMax: 10,
-                    min: 0,
-                    },
-                },
-                {
                     id: 'ratio',
                     type: "linear",
                     display: false,
@@ -400,9 +381,25 @@ window.onload = function () {
                     callback: function(value, index, values) {
                         return value + ' %';
                     }
+                },
+                {
+                    id: 'bar',
+                    stacked: true,
+                    display: false,
+                    position: "left",
+                    id: "bar",
+                    ticks: {
+                    beginAtZero: true,
+                    suggestedMin: 0,
+                    suggestedMax: 10,
+                    min: 0,
+                    },
                 }]
             }
         }
     });
 };
+
+
+
 
