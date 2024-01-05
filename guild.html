@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
     <!-- main css for template -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -37,6 +40,7 @@
         </div>
     </div>
     <!-- preloader ending here -->
+
 
 
     <!-- ==========Header Section Starts Here========== -->
@@ -85,17 +89,12 @@
                                     <a href="lucky.html"><i class="fa-solid fa-gifts"></i></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);"><i class="fa-solid fa-globe"></i></a>
-                                    <ul class="submenu">
-                                        <li><a href="#">EN</a></li>
-                                        <li><a href="#">KR</a></li>
-                                    </ul>
+                                    <a href="scholarship.html"><i class="fa-solid fa-user-group"></i></a>
                                 </li>
                             </ul>
                             <a class="wallet-btn" href="#" data-bs-toggle="modal" data-bs-target="#wallet-option">
                                 <span>Connect</span> <i class="fa-solid fa-wallet"></i>
                             </a>
-
                             <!-- toggle icons -->
                             <div class="header-bar d-lg-none">
                                 <span></span>
@@ -104,7 +103,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -112,30 +110,464 @@
 
 
 
-    
-    <section class="tabmenuRight bg--primary-color zindex99">
+    <!-- ==========>> Banner Section start Here <<========== -->
+    <section class="banner banner--style2" id="home" style="background-image: url(assets/images/banner/guild.jpg);">
         <div class="container">
-            <div class="section-header section-header--middle padding-top">
+            <div class="banner__wrapper">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="banner__content text-center" data-aos="zoom-in" data-aos-duration="900">
+                            <h1>Special Siege Battle</h1>
+                            <h3>Time Left<span class="">89d 23h 59m 59s</span></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ==========>> Banner Section Ends Here <<========== -->
+
+
+    
+    <!-- ==========>> Normal Earn Room here <<========== -->
+    <section class="project padding-top40 project--completed2 bg--black-color">
+        <div class="container">
+            <div class="section-header text-center">
                 <div class="section-header__content">
                     <div class="section-header__titlebar">
-                        <h2 class="section__header__title">GUILD</h2>
+                        <!-- <h2 class="section__header__title">The special siege will begin shortly. 
+                            <br>Please register your guild card and press the join button.
+                        </h2> -->
+                        <h2 class="color--theme-color">World Eldir</h2>
+                        <h2 class="section-header__title">
+                            Congratulations on the siege victory!<Br>
+                            You can earn <span class="color--theme-color">300,000,000 EGG</span>!
+                        </h2>
+                        <h4 class="color--pink-color">If you collect EGG in bulk, a withdrawal fee of 30% will be applied.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="project__wrapper">
+                <!-- <div class="row g-4">
+                    <div class="col-lg-12 col-md-12" data-aos="fade-up">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="default-btn default-btn--large text-center">JOIN</a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row g-4">
+                    <div class="col-lg-12 col-md-12" data-aos="fade-up">
+                        <div class="d-flex justify-content-center align-items-center btn-group">
+                            <a href="#" class="default-btn default-btn--large text-center" data-bs-toggle="modal" data-bs-target="#battle">Bulk</a>
+                            <a href="#" class="default-btn default-btn--large text-center">Installments</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==========>> Completed Project Section start Here <<========== -->
-    <section class="project padding-top padding-bottom bg--blackgraident-color">
-        <div class="padding-top padding-bottom"></div>
-        <div class="padding-top padding-bottom"></div>
+    
+    <section class="project padding-top40 padding-bottom project--completed2 bg--black-color">
+        <div class="container">    
+            <div class="project__wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative aos-init backGuild step01" data-aos="fade-up"
+                            data-aos-duration="800">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>1st Round</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Earned EGG</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">9,850,000</h6>
+                                    </div>
+                                    <div class="row g-4 mt-3">
+                                        <div class="col-lg-12 col-md-12" data-aos="fade-up">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <a href="#" class="default-btn text-center">Earn completed</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative aos-init backGuild" data-aos="fade-up"
+                            data-aos-duration="800">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>2nd Round</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Earned EGG</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">9,850,000</h6>
+                                    </div>
+                                    <div class="row g-4 mt-3">
+                                        <div class="col-lg-12 col-md-12" data-aos="fade-up">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <a href="#" class="default-btn text-center">Receive it now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative aos-init backGuild step03" data-aos="fade-up"
+                            data-aos-duration="800">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>3rd Round</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Earned pending EGG</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">9,850,000</h6>
+                                    </div>
+                                    <div class="row g-4 mt-3">
+                                        <div class="col-lg-12 col-md-12" data-aos="fade-up">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <a href="#" class="default-btn default-btn--secondary text-center">15d 23h 59m 59s</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- ==========>> Completed Project Section Ends Here <<========== -->
 
 
+    <section class="bg--black-color">        
+        <div class="farming myVoting">
+            <div class="container">
+                <div class="farming__wrapper">
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <div class="farming__item">
+                                <div class="farming__item-header" data-toggle-content="farming__content1">
+                                    <div class="farming__content">
+                                        <div class="farming__content-title" style="margin-bottom:0">
+                                            <h4 class="positionR">Server Ranking</h4>
+                                            <h4 class="color--theme-color"><i class="fa fa-arrow-down"></i></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="farming__item-body" id="farming__content1">
+                                    <div class="farming__wrapper">
+                                        <div class="section-header section-header--left">
+                                            <div class="section-header__content">
+                                                <div class="section-header__titlebar">
+                                                    <h3 class="section__header__title">Server Ranking</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 100%; height: 450px;">
+                                            <canvas id="serverRanking"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="project padding-top40 padding-bottom project--completed2 bg--black-color">
+        <div class="container">    
+            <div class="project__wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild01">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Limen</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li class="color--theme-color">Balder Arnvidarkin</li>
+                                            <li class="color--theme-color">Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild02">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Eldir</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">10,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li class="color--pink-color guildWin">Karoline Kalfrdottir <span class="positionA"><i class="fa-solid fa-fire"></i></span></li>
+                                            <li class="line-through">Gunnhildr Skullcaller</li>
+                                            <li class="color--theme-color line-through">Gudrun the Wretched</li>
+                                            <li class="line-through">Solgi the Subtle</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild03">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Surt</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li class="color--theme-color">Balder Arnvidarkin</li>
+                                            <li class="color--theme-color">Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild04">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Broken</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li>Balder Arnvidarkin</li>
+                                            <li  >Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild05">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Terna</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li class="color--theme-color">Balder Arnvidarkin</li>
+                                            <li class="color--theme-color">Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild06">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Bebens</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li class="color--theme-color">Balder Arnvidarkin</li>
+                                            <li class="color--theme-color">Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild07">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Norde</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li class="color--theme-color">Balder Arnvidarkin</li>
+                                            <li class="color--theme-color">Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild08">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Muspel</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li class="color--theme-color">Balder Arnvidarkin</li>
+                                            <li class="color--theme-color">Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="project__item2 position-relative guild09">
+                            <div class="project__item2-inner">
+                                <div class="project__item2-name">
+                                    <div class="project__item2-content">
+                                        <h4>Chronos</h4>
+                                    </div>
+                                </div>
+                                <div class="width100">
+                                    <div class="project__item-amount">
+                                        <div>
+                                            <p>Dividend</p>
+                                        </div>                                    
+                                        <h6 class="color--theme-color">500,245,645 EGG</h6>
+                                    </div>
+                                    <div class="project__item-amount">
+                                        <ul class="guildList">
+                                            <li class="nodeco">[ Guild ]</li>
+                                            <li>Sazur Audgislson</li>
+                                            <li class="color--theme-color">Balder Arnvidarkin</li>
+                                            <li class="color--theme-color">Thorberger Laughingbasher</li>
+                                            <li>Frodi Emberarm</li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========>> Normal Earn Room Ends Here <<========== -->    
+
+    
 
     <!-- ================> Footer section start here <================== -->
-    <footer class="footer bg--black-color zindex59" style="background-image: url(assets/images/banner/main_3.png);">
+    <footer class="footer bg--black-color zindex59" style="background-image: url(assets/images/banner/main_2.png);">
         <div class="footer__wrapper padding-top padding-bottom">
             <div class="container">
                 <div class="footer__content text-center">
@@ -146,18 +578,6 @@
                     <ul class="social justify-content-center">
                         <li class="social__item">
                             <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-discord"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-twitch"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li class="social__item">
                             <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
@@ -181,8 +601,86 @@
 
 
     <!-- scrollToTop start here -->
-    <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+    <a href="#" class="scrollToTop zindex999"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
     <!-- scrollToTop ending here -->
+
+    
+
+    <!-- connect wallet modal start -->
+    <div class="wallet-modal modal fade" id="wallet-option" tabindex="-1" aria-labelledby="choose-wallet"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">Connect Your Wallet</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please select a wallet from below to connect for Launching your IGO's</p>
+                    <ul class="wallet__list">
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/metamask.svg"
+                                        alt="metamask">
+                                </span> </a></li>
+                        <li class="wallet__list-item"><a href="#"> <span><img src="assets/images/wallet/coinbase.svg"
+                                        alt="coinbase">
+                                </span> </a></li>
+                    </ul>
+                    <p>By connecting your wallet, you agree to our <a href="#">Terms of Service</a> and our <a
+                            href="#">Privacy Policy</a> .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connect wallet modal end -->
+    
+
+    <!-- battle modal -->
+    <div class="wallet-modal modal fade" id="battle" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">Special Siege Battle</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="selectServer">
+                        <p class="mb-0">Please select the server to participate in the special siege battle.</p>
+                        <label class=" active">Limen
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="">Broken
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="">Terna
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="">Norde
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="">Chronos
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>  
+                    <p>Would you like to apply for participation in the Special Siege Battle? Participation requires 
+                        <span class="color--pink-color">5,000,000 EGG</span>.
+                    </p>
+                    <p class="color--theme-color">※ We do not compensate for damages resulting from individual errors.</p>
+                    <div class="btn-group">
+                        <a href="#" class="default-btn default-btn--small text-center">Confirm</a>
+                        <a href="#" class="default-btn default-btn--small text-center default-btn--secondary"  class="btn-close" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- battle modal end -->
+
+
 
 
     <!-- vendor plugins -->
@@ -193,6 +691,8 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/purecounter.js"></script>
+
+    <!-- template js -->
     <script src="assets/js/custom.js"></script>
 </body>
 

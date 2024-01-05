@@ -24,6 +24,7 @@
 
     <!-- main css for template -->
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body class="bg--primary-color">
@@ -85,11 +86,7 @@
                                     <a href="lucky.html"><i class="fa-solid fa-gifts"></i></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);"><i class="fa-solid fa-globe"></i></a>
-                                    <ul class="submenu">
-                                        <li><a href="#">EN</a></li>
-                                        <li><a href="#">KR</a></li>
-                                    </ul>
+                                    <a href="#"><i class="fa-solid fa-user-group"></i></a>
                                 </li>
                             </ul>
                             <a class="wallet-btn" href="#" data-bs-toggle="modal" data-bs-target="#wallet-option">
@@ -126,7 +123,7 @@
     
     <section class="bg--primary-color">
         <div class="container">
-            <div class="luckyDraw">                                                        
+            <div class="luckyDraw">
                 <div class="grace_title">
                     <h3 class="text-center mt-3">
                         <span><img src="assets/images/blog/wing.png" alt=""></span>
@@ -174,8 +171,8 @@
                                                 <div class="luckyDraw scene positionR mt-3">
                                                     <img src="assets/images/blog/lucky01.gif">
                                                     <div class="positionA luckybtn">
-                                                        <a class="default-btn default-btn--secondary">Pray x 1 <span>SFT 100</span></a>
-                                                        <a class="default-btn default-btn--secondary">Pray x 10 <span>SFT 1000</span></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#jacpot" class="default-btn default-btn--secondary">Pray x 1 <span>SFT 100</span></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#pray10" class="default-btn default-btn--secondary">Pray x 10 <span>SFT 1000</span></a>
                                                     </div>   
                                                 </div>                                                 
                                             </div>
@@ -734,25 +731,12 @@
                     <a href="https://www.neowiz.com/neowiz/" target="_blank"><img src="assets/images/team/neowiz.png" alt="neowiz"></a>
                     <a href="http://bluepotion.co.kr/" target="_blank"><img src="assets/images/team/bluepotion.png" alt="bluepotion"></a>
                     <a href="https://intellax.io/" target="_blank"><img src="assets/images/team/intellaX.png" alt="intellaX"></a>
-
                     <ul class="social justify-content-center">
                         <li class="social__item">
                             <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="social__item">
                             <a href="#" class="social__link"><i class="fab fa-discord"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-twitch"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -763,7 +747,11 @@
                 <div class="text-center py-4">
                     <a class=" mb-0">Terms of Use | </a>
                     <a class=" mb-0">Privacy Policy | </a>
-                    <a class=" mb-0">Cookie Policies</a>
+                    <a class=" mb-0">Cookie Policies | </a>
+                    <select class="footerLang">
+                        <option><a href="#">EN</a></option>
+                        <option><a href="#">KR</a></option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -781,7 +769,7 @@
                     <h4 class="modal-title" id="choose-wallet">Offer A</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">                    
+                <div class="modal-body">
                     <div class="project__item">
                         <div class="project__item-inner">
                             <div class="invenimg">
@@ -896,11 +884,478 @@
         </div>
     </div>
     <!-- #offerB -->
+    
+    <!-- #jacpot -->
+    <div class="wallet-modal modal fade" id="jacpot" tabindex="-1" aria-labelledby="choose-wallet" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">JACKPOT</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="luckyDraw">
+                        <div class="grace_title">
+                            <h3 class="text-center mt-3">
+                                <span><img src="assets/images/blog/wing.png" alt=""></span>
+                                DIVINE GRACE
+                                <span><img src="assets/images/blog/wing.png" class="rotatey180" alt=""></span>
+                            </h3>
+                            <div class="luckyinput">
+                                <img src="assets/images/blog/usdc.png">
+                                <h6 class="pointNo">5</h6>
+                                <h6 class="color--theme-color">,</h6>
+                                <h6 class="pointNo">0</h6>
+                                <h6 class="pointNo">1</h6>
+                                <h6 class="pointNo">0</h6>
+                                <h6 class="color--theme-color">,</h6>
+                                <h6 class="pointNo">0</h6>
+                                <h6 class="pointNo">0</h6>
+                                <h6 class="pointNo">8</h6>
+                                <h6 class="color--theme-color">,</h6>
+                                <h6 class="pointNo">1</h6>
+                                <h6 class="pointNo">2</h6>
+                                <h6 class="pointNo">0</h6>
+                            </div>
+                            <p class="p1">May the blessings of the gods be with you.<br>
+                                You have won <span class="color--theme-color">5,010,008,120</span> USDCs.<br>
+                                The tokens you have won can be checked in your wallet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #jacpot -->
+    
+    <!-- #pray10 -->
+    <div class="wallet-modal modal fade" id="pray10" tabindex="-1" aria-labelledby="choose-wallet" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">Congratulations!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body luckyprice">                    
+                    <div class="project__wrapper">
+                        <div class="swiper project__slider py-2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/igo/item/odin3.jpg" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/A.png" alt="author image"></a>
+                                                        <h6>Relic Card</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                            <p class="project__infolist-data">0 / 50</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/token/80.png" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/F.png" alt="author image"></a>
+                                                        <h6>SFT 80</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>SFT 80</p>
+                                                            <p class="project__infolist-data">x 1</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/igo/item/tribute_2.jpg" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/D.png" alt="author image"></a>
+                                                        <h6>Tribute2</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/token/200.png" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/G.png" alt="author image"></a>
+                                                        <h6>SFT 200</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>SFT 200</p>
+                                                            <p class="project__infolist-data">x 1</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/igo/item/tribute_3.jpg" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/C.png" alt="author image"></a>
+                                                        <h6>Tribute3</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                            <p class="project__infolist-data">0 / 50</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/token/80.png" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/F.png" alt="author image"></a>
+                                                        <h6>SFT 80</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>SFT 80</p>
+                                                            <p class="project__infolist-data">x 1</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/B.png" alt="author image"></a>
+                                                        <h6>Relic Card</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_damage.png"></span>Damage</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_ciritical.png"></span>Critical</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>Gold</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_EXP.png"></span>EXP</p>
+                                                            <p class="project__infolist-data">x 1.0 (50)</p>
+                                                        </li>
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_enhancement.png"></span>Enchant</p>
+                                                            <p class="project__infolist-data">0 / 50</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/token/80.png" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/F.png" alt="author image"></a>
+                                                        <h6>SFT 80</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>SFT 80</p>
+                                                            <p class="project__infolist-data">x 1</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/token/100.png" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/G.png" alt="author image"></a>
+                                                        <h6>SFT 100</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>SFT 100</p>
+                                                            <p class="project__infolist-data">x 1</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item project__item--completed1">
+                                        <div class="project__item-inner">
+                                            <div class="project__item-thumb">
+                                                <img src="assets/images/token/80.png" alt="">
+                                            </div>
+                                            <div class="project__item-content">
+                                                <div class="project__item-top">
+                                                    <div class="project__item-author">
+                                                        <a href="#"><img src="assets/images/igo/author/F.png" alt="author image"></a>
+                                                        <h6>SFT 80</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="project__item-middle">
+                                                    <ul class="project__infolist">
+                                                        <li class="project__infolist-item">
+                                                            <p class="project__infolist-name">
+                                                                <span><img src="assets/images/igo/item/sicon_gold.png"></span>SFT 80</p>
+                                                            <p class="project__infolist-data">x 1</p>
+                                                        </li>
+                                                    </ul>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#pricesummary" class="default-btn">Confirm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #pray10 -->
+    
+    <!-- #pricesummary -->
+    <div class="wallet-modal modal fade" id="pricesummary" tabindex="-1" aria-labelledby="choose-wallet" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="choose-wallet">LuckyDraw Price</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="project__item">
+                        <div class="project__item-inner">
+                            <div class="luckysummary">
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">B</p>
+                                    <img src="assets/images/igo/item/odin3.jpg" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">G</p>
+                                    <img src="assets/images/token/80.png" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">D</p>
+                                    <img src="assets/images/igo/item/tribute_2.jpg" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">E</p>
+                                    <img src="assets/images/token/200.png" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">F</p>
+                                    <img src="assets/images/token/100.png" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">C</p>
+                                    <img src="assets/images/igo/item/tribute_3.jpg" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">A</p>
+                                    <img src="assets/images/igo/item/odin7.jpg" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">G</p>
+                                    <img src="assets/images/token/80.png" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">G</p>
+                                    <img src="assets/images/token/80.png" alt="">
+                                </div>
+                                <div class="positionR">
+                                    <p class="luckyGrade positionA">D</p>
+                                    <img src="assets/images/igo/item/tribute_2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="luckytext">    
+                            <ul>
+                                <li>Relic Card A x  <span class="color--theme-color">1</span></li>
+                                <li>Relic Card B x  <span class="color--theme-color">1</span></li>
+                                <li>Tribute Card Type2 x  <span class="color--theme-color">2</span></li>
+                                <li>Tribute Card Type3 x  <span class="color--theme-color">1</span></li>
+                            </ul>
+                            <ul>
+                                <li>in game item01 x  <span class="color--theme-color">1</span></li>
+                                <li>in game item02 x  <span class="color--theme-color">1</span></li>
+                                <li>in game item03 x  <span class="color--theme-color">1</span></li>
+                                <li>in game item04 x  <span class="color--theme-color">1</span></li>
+                            </ul>
+                            <ul>
+                                <li>SFT200 x  <span class="color--theme-color">1</span></li>
+                                <li>SFT100 x  <span class="color--theme-color">1</span></li>
+                                <li>SFT80 x <span class="color--theme-color">3</span></li>
+                                <li>Total SFT <span class="color--theme-color">540</span></li>
+                            </ul>
+                        </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#pricesummary" class="default-btn">Confirm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #pricesummary -->
+
 
     <!-- scrollToTop start here -->
     <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
     <!-- scrollToTop ending here -->
-
 
     <!-- vendor plugins -->
     <script src=" assets/js/jquery-3.6.0.min.js">
